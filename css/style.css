@@ -132,7 +132,7 @@ td { vertical-align: top; }
   .footer .content { width:950px; padding-top:34px; }
   .footer a { color:#EEE; }
     /* Footer Subscribe */
-    .footer .subscribe { float: left; padding-bottom:40px; }
+    .footer .subscribe { float: left; padding-bottom:40px; margin-right:40px; }
     .footer .subscribe label { float: left; line-height:34px; margin-right:10px; }
     .footer .subscribe .control { width:275px; background:#3392ba; float: left; padding:8px; border-radius:3px; -moz-border-radius:5px; -webkit-border-radius: 3px; }
     .footer .subscribe .subscribeemail { border:none; background:none; color: #FFF; width:200px; }
@@ -142,10 +142,14 @@ td { vertical-align: top; }
     /* Footer Social */
     .footer .social { float: left; width:250px; height:34px; overflow: hidden; }
     /* Footer Brand */
-    .footer .brand { float:left; clear: left; }
+    .footer .brand { float:left; clear: left; margin-right:20px; }
     .footer .logo { float: left; background:url(../img/footer_logo.png) center center no-repeat; height:50px; width:240px; padding:60px 115px; border:1px solid #74cbef; }
     /* Footer Bottom Links */
     .footer .bottomlinks { float: left; width:250px; }
+    .footer .bottomlinks ul { float: left; width:125px; padding:23px 0; }
+    .footer .bottomlinks ul.first { border-right:1px solid #74cbef; }
+    .footer .bottomlinks ul.last { padding-left:25px; width:75px; }
+    .footer .bottomlinks li { float: left; width:125px; margin-bottom:5px; }
     /* Footer Donate */
     .footer .donate { float: right; width:178px; height:240px; border:1px solid #74cbef; }
     .footer .donate p { margin: 5px 0 5px 7px; font-family:'Museo-300'; font-size:18px; }
