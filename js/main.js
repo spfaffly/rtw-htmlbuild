@@ -45,19 +45,11 @@ $(document).ready(function(){
 	$("#herocarousel").carouFredSel({
       width: "100%",
       height: "auto",
-      responsive:true,
       auto: 3000,
       scroll:{duration: 1000, fx:"scroll", pauseOnHover:true, easing: "swing"},
-      prev: {
-         button: "#hero .prev",
-         key: "left"
-      },
-      next: {
-         button: "#hero .next",
-         key: "right"
-      },
-      pagination: "#hero .pager",
-      onCreate: function(){ setTimeout(function(){ $(window).resize(); }, 1000); /* Hack to recalculate height */ }
+      prev: { button: "#hero .prev", key: "left" },
+      next: { button: "#hero .next", key: "right" },
+      pagination: "#hero .pager"
 	});
 
 	/* Initialize Winners */
