@@ -43,11 +43,21 @@ $(document).ready(function(){
 	/* Initialize Main Hero */
 	// @TODO: Custom callback functions to control scolling
 	$("#herocarousel").carouFredSel({
-		responsive:true,
-	    auto: 3000,
-	    width: "variable",
-	    scroll:{fx:"crossfade", pauseOnHover:true},
-		onCreate: function(){ setTimeout(function(){ $(window).resize(); }, 100); /* Hack to recalculate height */ }
+      width: "100%",
+      height: "auto",
+      responsive:true,
+      auto: 3000,
+      scroll:{duration: 1000, fx:"scroll", pauseOnHover:true, easing: "swing"},
+      prev: {
+         button: "#hero .prev",
+         key: "left"
+      },
+      next: {
+         button: "#hero .next",
+         key: "right"
+      },
+      pagination: "#hero .pager",
+      onCreate: function(){ setTimeout(function(){ $(window).resize(); }, 1000); /* Hack to recalculate height */ }
 	});
 
 	/* Initialize Winners */

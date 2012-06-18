@@ -76,12 +76,17 @@ td { vertical-align: top; }
     .section.overlay { background:url(../img/background_overlay.jpg) repeat; border:1px solid #c3d1dc; border-left:none; border-right:none; }
     .section .column { float:left; width:485px; }
     .section .column.right { float: right; width:400px; }
+
   /* Arrow Buttons */
     .arrow { background:url(../img/arrow_button_sprite.png) no-repeat; height:63px; width:63px; position: absolute; }
       .arrow:hover { background-position:0 -70px; }
-      .arrow.left { top:50%; margin-top:-32px; left:0; }
-      .arrow.right { top:50%; margin-top:-32px; right:0; background-position:-70px 0;}
-        .arrow.right:hover { background-position:-70px -70px;}
+      .arrow.prev { top:50%; margin-top:-32px; left:0; }
+      .arrow.next { top:50%; margin-top:-32px; right:0; background-position:-70px 0;}
+        .arrow.next:hover { background-position:-70px -70px;}
+  /* Pager Buttons */
+    .pager { text-align:center; }
+    .pager a { margin-right:8px; background:url(../img/pager_button_sprite.png) -21px 0 no-repeat; height:13px; width:13px; display: inline-block; border: 0; font: 0/0 a; text-shadow: none; color: transparent; background-color: transparent; }
+    .pager a.selected { background-position:0 0; }
 
   /* Header */
     /* Donate Nag */
