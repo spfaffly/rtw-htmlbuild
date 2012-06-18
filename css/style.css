@@ -80,23 +80,27 @@ td { vertical-align: top; }
   /* Header */
     /* Donate Nag */
       .donatenag { height:24px; line-height:24px; background:#43b9ea; color:#000; }
-      .donatenag p { width: 1024px; margin:0 auto; font-family:'Arial'; text-indent:10px; }
-      .donatenag a { color:#FFF; font-family:'Museo-700';}
+      .donatenag p { width: 1024px; margin:0 auto; font-family:'Arial'; font-weight:700; text-indent:10px; }
+      .donatenag a { color:#FFF; font-family:'Museo-700'; font-weight:400; }
       .donatenag a.close { float: right; background:url(../img/donatenag_close.png) no-repeat; height:16px; width:16px; margin-top:4px; }
         .donatenag a.close:hover { background-position:0 -20px; }
 
     /* Main Nav */
       .fixednav { background:url(../img/mainnav_background.png) repeat-x; height:125px; font-size:16px; font-family:'Museo-500'; position: relative; }
-      .fixednav h1 { background:url(../img/logo.png) no-repeat; height:49px; width:237px; position: absolute; top:35px; left:30px; }
-      .mainnav { float: right; margin-top:30px; margin-right:70px; position: relative; }
+      .fixednav h1 { margin:0; }
+      .fixednav h1 a { background:url(../img/logo.png) no-repeat; height:49px; width:237px; position: absolute; top:35px; left:30px; }
+      .mainnav { float: right; margin-top:30px; margin-right:35px; padding-right:35px; position: relative; }
+      .mainnav ul { float: right;}
       .mainnav li { float: left; padding:0 10px 0 0; margin:0 10px 0 0; background:url(../img/mainnav_li_background.png) no-repeat right 10px; }
         .mainnav li.last { background:none; padding:0; margin:0; }
-      .mainnav a { color: #4e4e4e; text-decoration:none; font-weight:400; text-shadow: 1px 1px 2px #FFF; line-height:55px; }
+      .mainnav a { color: #606060; text-decoration:none; font-weight:400; text-shadow: 1px 1px 2px #FFF; line-height:55px; }
         .mainnav a:hover { text-decoration:underline; }
-        .mainnav .active a { font-family:'Museo-700'; color: #43b9ea; }
+        .mainnav .active a { font-family:'Museo-700'; color: #549ab7; background:url(../img/mainnav_active.png) no-repeat center 40px; overflow: visible; height:90px; display: block; }
+      .mainnav .socialtoggle { position: absolute; top:17px; right:0; height:20px; width:20px; background:url(../img/mainnav_social.png) no-repeat; }
+        .mainnav .socialtoggle:hover { background-position: 0 -30px;}
 
     /* Social Links */
-      .social { float: right; margin:5px 0 0 0; }
+      /*.social { float: right; margin:5px 0 0 0; }
       .social li { float: left; margin:0 0 0 5px; }
       .social a { height:25px; width:26px; background:url(../img/social_sprite.png) no-repeat; background-repeat: no-repeat; display: block; float:left; }
         .social a.facebook { background-position:0 0; background-repeat: no-repeat; }
@@ -106,18 +110,19 @@ td { vertical-align: top; }
         .social a.youtube { background-position:-57px 0; background-repeat: no-repeat; }
           .social a.youtube:hover { background-position:-57px -30px; }
         .social a.flikr { background-position:-86px 0; background-repeat: no-repeat; }
-          .social a.flikr:hover { background-position:-86px -30px; }
+          .social a.flikr:hover { background-position:-86px -30px; }*/
 
   /* Donate */
-    .donate { background:url(../img/donate_background.png) repeat-x; height:31px; margin:1px 0 0 0; position: relative; }
-    .donate .button { background:url(../img/donate_button_sprite.png) repeat-x; height:165px; width:165px; display: block; position: absolute; left:50%; margin:0 0 0 -82px; top:-100px; }
-      .donate .button:hover { background-position:0 -175px; }
+    .donate { }
+    .donate .button { background:url(../img/donate_button_sprite.png) repeat-x; height:145px; width:145px; display: block; position: absolute; left:50%; margin:0 0 0 -82px; top:-100px; }
+      .donate .button:hover { background-position:0 -150px; }
 
   /* Hero */
-    .hero { padding:0 0 30px 0; overflow: hidden; }
+    .hero { padding:0 0 30px 0; overflow: hidden; position: relative; }
     .hero .slide { float: left; max-height:500px; overflow: hidden; }
       .hero .slide.hide { display: none; }
     .hero .slide img { width:100%; }
+    .hero .donate { }
 
   /* Competition Section */
     .competition { margin:110px 0 0 0; padding: 0 0 35px 0; position: relative; }
