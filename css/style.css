@@ -109,20 +109,7 @@ td { vertical-align: top; }
         .mainnav .active a { font-family:'Museo-700'; color: #549ab7; background:url(../img/mainnav_active.png) no-repeat center 40px; overflow: visible; height:90px; display: block; }
       .mainnav .socialtoggle { position: absolute; top:17px; right:0; height:21px; width:21px; background:url(../img/mainnav_social.png) no-repeat; }
         .mainnav .socialtoggle:hover { background-position: 0 -30px;}
-
-    /* Social Links */
-      /*.social { float: right; margin:5px 0 0 0; }
-      .social li { float: left; margin:0 0 0 5px; }
-      .social a { height:25px; width:26px; background:url(../img/social_sprite.png) no-repeat; background-repeat: no-repeat; display: block; float:left; }
-        .social a.facebook { background-position:0 0; background-repeat: no-repeat; }
-          .social a.facebook:hover { background-position:0 -30px; }
-        .social a.twitter { background-position:-29px 0; background-repeat: no-repeat; }
-          .social a.twitter:hover { background-position:-29px -30px; }
-        .social a.youtube { background-position:-57px 0; background-repeat: no-repeat; }
-          .social a.youtube:hover { background-position:-57px -30px; }
-        .social a.flikr { background-position:-86px 0; background-repeat: no-repeat; }
-          .social a.flikr:hover { background-position:-86px -30px; }*/
-
+        
   /* Donate */
     .donate { }
     .donate .button { background:url(../img/donate_button_sprite.png) repeat-x; height:145px; width:145px; display: block; position: absolute; left:50%; margin:0 0 0 -82px; top:-100px; }
@@ -136,16 +123,16 @@ td { vertical-align: top; }
     .hero .donate { }
 
   /* Competition Section */
-    .competition { margin:110px 0 0 0; padding: 0 0 35px 0; position: relative; }
+    /*.competition { margin:110px 0 0 0; padding: 0 0 35px 0; position: relative; }
     .competition h2 { position: absolute; top:-140px; width:100%; }
     .competition .column.left { margin-top:-46px; }
     .competition .pull-left { width: 50%; text-align:center; }
     .competition .pull-right { width: 50%; text-align:center; }
     .competition .rules { color: #6e6e6e; }
-    .competition .address { font-style:italic; }
+    .competition .address { font-style:italic; }*/
 
   /* Winners Section */
-    .winners { }
+    /*.winners { }
     .winners .winnercarousel { width:888px; overflow: hidden; background:#FFF; position: relative; padding:0 10px; border: 1px solid #999; box-shadow: 0 0 10px #ccc; }
     .winners .winnercarousel .item { float:left; width:400px; overflow: hidden; margin: 10px 5px; text-align:center; padding:5px; border: 1px solid #999; box-shadow: 0 0 2px #CCC; }
     .winners .winnercarousel .item {
@@ -155,10 +142,10 @@ td { vertical-align: top; }
       transition:opacity 0.25s linear;
     }
     .winners .winnercarousel .item img { }
-    .winners .winnercarousel .opacity { opacity: 0.5; -moz-opacity: 0.5; filter:alpha(opacity=5); }
+    .winners .winnercarousel .opacity { opacity: 0.5; -moz-opacity: 0.5; filter:alpha(opacity=5); }*/
 
   /* Footer */
-  .footer { height:544px; width:100%; margin:30px 0 0 0; background:url(../img/footer_background.png) repeat-x top center; }
+  .footer { height:346px; width:100%; margin:30px 0 0 0; background:url(../img/footer_background.png) repeat-x top center; }
 
 
   /* Font Faces */
