@@ -134,11 +134,12 @@ td { vertical-align: top; }
     /* Footer Subscribe */
     .footer .subscribe { float: left; padding-bottom:40px; margin-right:40px; }
     .footer .subscribe label { float: left; line-height:34px; margin-right:10px; }
-    .footer .subscribe .control { width:275px; background:#3392ba; float: left; padding:8px; border-radius:3px; -moz-border-radius:5px; -webkit-border-radius: 3px; }
-    .footer .subscribe .subscribeemail { border:none; background:none; color: #FFF; width:200px; }
+    .footer .subscribe .control { width:275px; background:#3392ba; float: left; position: relative; padding:8px; border-radius:3px; -moz-border-radius:5px; -webkit-border-radius: 3px; }
+    .footer .subscribe .subscribeemail { border:none; background:none; color: #FFF; width:180px; }
       .footer .subscribe .subscribeemail::-webkit-input-placeholder { color:#FFF; }
       .footer .subscribe .subscribeemail::-moz-input-placeholder { color:#FFF; }
-    .footer .subscribe .subscribebutton { border:none; float: right; }
+    .footer .subscribe .subscribebutton { border:none; position: absolute; top:3px; right:2px; height:28px; width:80px; margin:0; padding:0; background:url(../img/footer_subscribe_sprite.png) no-repeat; }
+      .footer .subscribe .subscribebutton:hover { background-position:0 -40px;}
     /* Footer Social */
     .footer .social { float: left; width:250px; height:34px; overflow: hidden; }
     /* Footer Brand */

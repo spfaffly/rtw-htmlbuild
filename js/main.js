@@ -2,19 +2,18 @@
 
 $(document).ready(function(){
 	// Scrollto function
-	// $('#mainnav a').on('click', function(event){
-	// 	event.preventDefault();	// So it doesn't drop
-	// 	var section = $(this).attr('href');
-	// 	if($(section).length > 0){
-	// 		$('html, body').animate({
- //        		scrollTop: $(section).offset().top - 100
- //        	}, 1000);
-	// 	} else {
-	// 		$('html, body').animate({scrollTop: 0}, 1000);
-	// 	}
-
-	// 	return false;
-	// });
+	$('#mainnav a').on('click', function(event){
+      event.preventDefault();	// So it doesn't drop
+      var section = $(this).attr('href');
+      if($(section).length > 0){
+         $('html, body').animate({
+            scrollTop: $(section).offset().top - 100
+         }, 1000);
+	 	} else {
+	 		$('html, body').animate({scrollTop: 0}, 1000);
+	 	}
+	 	return false;
+   });
 
 	// grab the initial top offset of the navigation 
     // var sticky_navigation_offset_top = $('#fixednav').offset().top;
