@@ -141,7 +141,18 @@ td { vertical-align: top; }
     .footer .subscribe .subscribebutton { border:none; position: absolute; top:3px; right:2px; height:28px; width:80px; margin:0; padding:0; background:url(../img/footer_subscribe_sprite.png) no-repeat; }
       .footer .subscribe .subscribebutton:hover { background-position:0 -40px;}
     /* Footer Social */
-    .footer .social { float: left; width:250px; height:34px; overflow: hidden; }
+    .footer .social { float: left; width:250px; height:34px; }
+    .footer .social p { float: left; width:95px; }
+    .footer .social ul { float: left; width:150px; margin-top:8px; }
+    .footer .social .icon { background:url(../img/footer_social_sprite.png) no-repeat; margin-right:3px; height:26px; width:26px; float: left; }
+    .footer .social .facebook { background-position:0 0; }
+      .footer .social .facebook:hover { background-position:0 -30px; }
+    .footer .social .twitter { background-position:-30px 0; }
+      .footer .social .twitter:hover { background-position:-30px -30px; }
+    .footer .social .youtube { background-position:-60px 0; }
+      .footer .social .youtube:hover { background-position:-60px -30px; }
+    .footer .social .flickr { background-position:-86px 0; }
+      .footer .social .flickr:hover { background-position:-86px -30px; }
     /* Footer Brand */
     .footer .brand { float:left; clear: left; margin-right:20px; }
     .footer .logo { float: left; background:url(../img/footer_logo.png) center center no-repeat; height:50px; width:240px; padding:60px 115px; border:1px solid #74cbef; }
