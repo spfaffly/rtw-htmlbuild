@@ -129,7 +129,7 @@ td { vertical-align: top; }
   .competition { }
   .competition .videos { margin-left:90px; }
   .competition .video { background:url(../img/competition_poster_frame.png) no-repeat; padding:5px; margin-right:10px; margin-bottom:15px; height:167px; width:267px; float: left; }
-  .competition .nexttext { font-size:20px; color: #3dbbe6; font-family:'Museo-500'; padding:5px; margin-right:10px; margin-bottom:15px; height:167px; width:267px; float: left; }
+  .competition .nexttext { text-shadow: 1px 1px 2px #f4f3f3; font-size:20px; color: #3dbbe6; font-family:'Museo-500'; padding:5px; margin-right:10px; margin-bottom:15px; height:167px; width:267px; float: left; }
   .competition .nexttext p { margin:0; }
   .competition .nexttext a { color: #3dbbe6; font-family:'Museo-700'; display: block !important; margin-top:5px; }
 
