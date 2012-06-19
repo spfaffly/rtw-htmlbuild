@@ -74,9 +74,10 @@ td { vertical-align: top; }
 
   /* Section */
     .section { }
-    .section.overlay { background:url(../img/background_overlay.jpg) repeat; border:1px solid #c3d1dc; border-left:none; border-right:none; }
-    .section .column { float:left; width:485px; }
-    .section .column.right { float: right; width:400px; }
+    .section h2 { margin:15px 0; }
+    .section .carousel { background:url(../img/section_overlay.png) 0 65px no-repeat; height:400px; position: relative; }
+    .section .carousel .slide { float: left; width:1024px; height:370px; }
+    .section .carousel .pager { }
 
   /* Arrow Buttons */
     .arrow { background:url(../img/arrow_button_sprite.png) no-repeat; height:63px; width:63px; position: absolute; }
@@ -84,6 +85,7 @@ td { vertical-align: top; }
       .arrow.prev { top:50%; margin-top:-32px; left:0; }
       .arrow.next { top:50%; margin-top:-32px; right:0; background-position:-70px 0;}
         .arrow.next:hover { background-position:-70px -70px;}
+
   /* Pager Buttons */
     .pager { text-align:center; }
     .pager a { margin-right:8px; background:url(../img/pager_button_sprite.png) -21px 0 no-repeat; height:13px; width:13px; display: inline-block; border: 0; font: 0/0 a; text-shadow: none; color: transparent; background-color: transparent; }
@@ -124,6 +126,12 @@ td { vertical-align: top; }
     .hero .donate { }
 
   /* Competition Section */
+  .competition { }
+  .competition .videos { margin-left:90px; }
+  .competition .video { background:url(../img/competition_poster_frame.png) no-repeat; padding:5px; margin-right:10px; margin-bottom:15px; height:167px; width:267px; float: left; }
+  .competition .nexttext { font-size:20px; color: #3dbbe6; font-family:'Museo-500'; padding:5px; margin-right:10px; margin-bottom:15px; height:167px; width:267px; float: left; }
+  .competition .nexttext p { margin:0; }
+  .competition .nexttext a { color: #3dbbe6; font-family:'Museo-700'; display: block !important; margin-top:5px; }
 
   /* Winners Section */
 
