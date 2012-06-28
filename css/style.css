@@ -129,9 +129,20 @@ td { vertical-align: top; }
   .competition { }
   .competition .videos { margin-left:90px; }
   .competition .video { background:url(../img/competition_poster_frame.png) no-repeat; padding:5px; margin-right:10px; margin-bottom:15px; height:167px; width:267px; float: left; }
-  .competition .nexttext { text-shadow: 1px 1px 2px #f4f3f3; font-size:20px; color: #3dbbe6; font-family:'Museo-500'; padding:5px; margin-right:10px; margin-bottom:15px; height:167px; width:267px; float: left; }
+  .competition .nexttext { text-shadow: 1px 1px 2px #f4f3f3; font-size:20px; color: #3dbbe6; font-family:'Museo-500'; }
   .competition .nexttext p { margin:0; }
   .competition .nexttext a { color: #3dbbe6; font-family:'Museo-700'; display: block !important; margin-top:5px; }
+  .competition .column { float: left; margin-top:100px; padding-right: 15px; margin-right: 18px; background: url(../img/slide_column_background.png) right 15px no-repeat; min-height: 160px; }
+  .competition .column h3 { color: #000; font-size: 20px; margin-bottom: 15px; text-transform: uppercase; min-width: 110px; }
+  .competition .column li { color: #43b9ea; font-family: "Arial"; font-size: 11px; margin-bottom: 3px; }
+  .competition .column.first { margin-left:100px; }
+  .competition .column.last { background: none; }
+
+    /* Slide One */
+    .competition .slideone .nexttext { padding:5px; margin-right:10px; margin-bottom:15px; height:167px; width:267px; float: left; }
+    /* Slide Two */
+    .competition .slidetwo { position: relative; }
+    .competition .slidetwo .nexttext { position: absolute; bottom: 65px; right: 100px; }
 
   /* Winners Section */
 
