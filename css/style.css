@@ -162,7 +162,7 @@ td { vertical-align: top; }
   .contact .formfield { border-radius: 3px; border:none; background: #3392b9; padding:10px; color:#fff; }
   .contact .text { float:left; clear:left; width:280px; margin-bottom: 10px; }
     .contact .text::-webkit-input-placeholder { color:#FFF; }
-  .contact .textarea { float:right; clear:right; width:280px; height: 63px; }
+  .contact .textarea { float:right; clear:right; width:280px; height: 63px; resize:none; }
     .contact .textarea::-webkit-input-placeholder { color:#FFF; }
   .contact .send { background: url(../img/contact_send_button.png) no-repeat; height: 30px; width: 110px; margin:0 auto; margin-top:20px; margin-left: -55px; }
     .contact .send:hover { background-position: 0 -40px; }
