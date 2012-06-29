@@ -38,78 +38,105 @@ $(document).ready(function(){
     // $(window).scroll(function() {
     //      sticky_navigation();
     // });
+  
+  /* Initialize Carousels */
+  // $(".carousel ul").carouFredSel({
+  //   circular: false,
+  //   infinite: false,
+  //   width: "100%",
+  //   height: "auto",
+  //   auto: { play: false, duration: 3000 },
+  //   scroll:{duration: 1000, fx:"scroll", easing: "swing"},
+  //   prev: {
+  //      button: function() {
+  //         return $(this).parents(".section").find(".prev");
+  //      }
+  //   },
+  //   next: {
+  //      button: function() {
+  //         return $(this).parents(".section").find(".next");
+  //      }
+  //   },
+  //   pagination  : {
+  //      container: function() {
+  //         return $(this).parents(".section").find(".pager");
+  //      }
+  //   }
+  // });
 
-	/* Initialize Main Hero */
+	/* Override - Initialize Main Hero */
 	$("#herocarousel").carouFredSel({
-      width: "100%",
-      height: "auto",
-      auto: 3000,
-      scroll:{duration: 1000, fx:"scroll", pauseOnHover:true, easing: "swing"},
-      prev: { button: "#hero .prev", key: "left" },
-      next: { button: "#hero .next", key: "right" },
-      pagination: "#hero .pager"
+    width: "100%",
+    height: "auto",
+    auto: 3000,
+    scroll:{duration: 1000, fx:"scroll", pauseOnHover:true, easing: "swing"},
+    prev: { button: "#hero .prev", key: "left" },
+    next: { button: "#hero .next", key: "right" },
+    pagination: "#hero .pager"
 	});
 
-   /* Initialize Carousels */
-   $(".carousel ul").carouFredSel({
-      circular: false,
-      infinite: false,
-      width: "100%",
-      height: "auto",
-      auto: { play: false, duration: 3000 },
-      scroll:{duration: 1000, fx:"scroll", easing: "swing"},
-      prev: {
-         button: function() {
-            return $(this).parents(".section").find(".prev");
-         }
-      },
-      next: {
-         button: function() {
-            return $(this).parents(".section").find(".next");
-         }
-      },
-      pagination  : {
-         container: function() {
-            return $(this).parents(".section").find(".pager");
-         }
-      }
-   });
+  /* Override - Initialize Winners */
+  $("#winners .carousel ul").carouFredSel({
+    circular: true,
+    infinite: true,
+    width: "100%",
+    height: "auto",
+    auto: { items: 1, visible: 1, play: true, pauseDuration: 4000, duration: 1000, pauseOnHover: true },
+    scroll:{ items: 1, duration: 1000, fx:"scroll", easing: "swing"},
+    items: { visible : "+1" },
+    prev: {
+       button: function() {
+          return $(this).parents(".section").find(".prev");
+       }
+    },
+    next: {
+       button: function() {
+          return $(this).parents(".section").find(".next");
+       }
+    },
+    pagination  : {
+      // items : 1,
+      //  container: function() {
+      //     return $(this).parents(".section").find(".pager");
+      //  }
+    }
+  });
 
 	/* Initialize Winners */
 	// @TODO: Custom callback functions to control scolling
-	$("#winnercarousel").carouFredSel({
-	    items: { visible: '+1' },
-		auto: { items: 1, pauseDuration: 4000 },
-	    width: "100%",
-	    prev: '#winnerprev',
-        next: '#winnernext',
-        scroll: {
-        	pauseOnHover: true,
-        	onBefore: function(oldItems, newItems){
-        		var count = 0;
-        		//oldItems.removeClass('opacity');
-        		newItems.each(function(){
-        			if(count == 0 || count == 2){
-        				$(this).addClass('opacity');
-        			} else {
-        				$(this).removeClass('opacity');
-        			}
-        			count++;
-        		});
-        	}
-        },
-        onCreate: function(items){ 
-        	var count = 0;
-    		//oldItems.removeClass('opacity');
-    		items.each(function(){
-    			if(count == 0 || count == 2){
-    				$(this).addClass('opacity');
-    			} else {
-    				$(this).removeClass('opacity');
-    			}
-    			count++;
-    		});
-        }
-	});
+	// $("#winnercarousel").carouFredSel({
+	//     items: { visible: '+1' },
+	// 	auto: { items: 1, pauseDuration: 4000 },
+	//     width: "100%",
+	//     prev: '#winnerprev',
+ //        next: '#winnernext',
+ //        scroll: {
+ //        	pauseOnHover: true,
+ //        	onBefore: function(oldItems, newItems){
+ //        		var count = 0;
+ //        		//oldItems.removeClass('opacity');
+ //        		newItems.each(function(){
+ //        			if(count == 0 || count == 2){
+ //        				$(this).addClass('opacity');
+ //        			} else {
+ //        				$(this).removeClass('opacity');
+ //        			}
+ //        			count++;
+ //        		});
+ //        	}
+ //        },
+ //        onCreate: function(items){ 
+ //        	var count = 0;
+ //    		//oldItems.removeClass('opacity');
+ //    		items.each(function(){
+ //    			if(count == 0 || count == 2){
+ //    				$(this).addClass('opacity');
+ //    			} else {
+ //    				$(this).removeClass('opacity');
+ //    			}
+ //    			count++;
+ //    		});
+ //        }
+	// });
 
 });

@@ -63,67 +63,74 @@ td { vertical-align: top; }
    ========================================================================== */
 
   /* Overall Page */
-    body { background:url(../img/background.jpg) repeat center; font-family:Arial; font-size:14px; min-width:1024px; }
-    h2 { color: #212121; font-family:'Museo-700'; font-weight:400; font-size:32px; text-align:center; background: -webkit-gradient(linear, left top, left bottom, from(#353535), to(#0e0e0e)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    h3 { color: #41baeb; font-family:'Museo-500'; font-weight:400; font-size:26px; text-shadow: 1px 1px 2px #f4f3f3; }
-    a { color:#0189bb; text-decoration:none; }
-    a:hover { color:#0189bb; text-decoration:underline; }
-    a:visited { color: #0077a3; }
-    .content { width: 1024px; margin:0 auto; }
-    input { font-family:Arial; text-shadow: 1px 1px 2px #2a7899; }
+  body { background:url(../img/background.jpg) repeat center; font-family:Arial; font-size:14px; min-width:1024px; }
+  h2 { color: #212121; font-family:'Museo-700'; font-weight:400; font-size:32px; text-align:center; background: -webkit-gradient(linear, left top, left bottom, from(#353535), to(#0e0e0e)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  h3 { color: #41baeb; font-family:'Museo-500'; font-weight:400; font-size:26px; text-shadow: 1px 1px 2px #f4f3f3; }
+  a { color:#0189bb; text-decoration:none; }
+  a:hover { color:#0189bb; text-decoration:underline; }
+  a:visited { color: #0077a3; }
+  .content { width: 1024px; margin:0 auto; }
+  input { font-family:Arial; text-shadow: 1px 1px 2px #2a7899; }
 
   /* Section */
-    .section { }
-    .section h2 { margin:15px 0; }
-    .section .carousel { background:url(../img/section_overlay.png) 0 65px no-repeat; height:400px; position: relative; }
-    .section .slide { float: left; width:1024px; height:370px; }
-    .section .carousel .pager { }
+  .section { }
+  .section h2 { margin:15px 0; }
+  .section .slide { float: left; width:1024px; height:370px; }
+  .section .carousel .pager { }
 
   /* Arrow Buttons */
-    .arrow { background:url(../img/arrow_button_sprite.png) no-repeat; height:63px; width:63px; position: absolute; }
-      .arrow:hover { background-position:0 -70px; }
-      .arrow.prev { top:50%; margin-top:-32px; left:0; }
-      .arrow.next { top:50%; margin-top:-32px; right:0; background-position:-70px 0;}
-        .arrow.next:hover { background-position:-70px -70px;}
+  .arrow { background:url(../img/arrow_button_sprite.png) no-repeat; height:63px; width:63px; position: absolute; }
+    .arrow:hover { background-position:0 -70px; }
+    .arrow.prev { top:50%; margin-top:-32px; left:0; }
+    .arrow.next { top:50%; margin-top:-32px; right:0; background-position:-70px 0;}
+      .arrow.next:hover { background-position:-70px -70px;}
 
   /* Pager Buttons */
-    .pager { text-align:center; }
-    .pager a { margin-right:8px; background:url(../img/pager_button_sprite.png) -21px 0 no-repeat; height:13px; width:13px; display: inline-block; border: 0; font: 0/0 a; text-shadow: none; color: transparent; background-color: transparent; }
-    .pager a.selected { background-position:0 0; }
+  .pager { text-align:center; }
+  .pager a { margin-right:8px; background:url(../img/pager_button_sprite.png) -21px 0 no-repeat; height:13px; width:13px; display: inline-block; border: 0; font: 0/0 a; text-shadow: none; color: transparent; background-color: transparent; }
+  .pager a.selected { background-position:0 0; }
+
+  /* Thumbnail */
+  .thumbnail { position: relative; }
+  a.thumbnail { float: left; }
+  .thumbnail img { float: left; }
+  .thumbnail .description { position: absolute; width: 100%; left: 0; bottom: -40px; background: #09d5ce; padding: 8px 0; text-align: center; font-family:'Museo-700'; font-weight:400; color: #333; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; -o-transition:all 0.5s ease-in-out; -ms-transition:all 0.5s ease-in-out; transition:all 0.5s ease-in-out; }
+  .thumbnail:hover .description { bottom: 0; }
+  .thumbnail.active .description { bottom: 0; }
 
   /* Header */
     /* Donate Nag */
-      .donatenag { height:24px; line-height:24px; background:#43b9ea; color:#000; }
-      .donatenag p { width: 1024px; margin:0 auto; font-family:'Arial'; font-weight:700; text-indent:10px; }
-      .donatenag a { color:#FFF; font-family:'Museo-700'; font-weight:400; }
-      .donatenag a.close { float: right; background:url(../img/donatenag_close.png) no-repeat; height:16px; width:16px; margin-top:4px; }
-        .donatenag a.close:hover { background-position:0 -20px; }
+    .donatenag { height:24px; line-height:24px; background:#43b9ea; color:#000; }
+    .donatenag p { width: 1024px; margin:0 auto; font-family:'Arial'; font-weight:700; text-indent:10px; }
+    .donatenag a { color:#FFF; font-family:'Museo-700'; font-weight:400; }
+    .donatenag a.close { float: right; background:url(../img/donatenag_close.png) no-repeat; height:16px; width:16px; margin-top:4px; }
+      .donatenag a.close:hover { background-position:0 -20px; }
 
     /* Main Nav */
-      .fixednav { background:url(../img/mainnav_background.png) repeat-x; height:125px; font-size:16px; font-family:'Museo-500'; position: relative; }
-      .fixednav h1 { margin:0; }
-      .fixednav h1 a { background:url(../img/logo.png) no-repeat; height:49px; width:237px; position: absolute; top:35px; left:30px; }
-      .mainnav { float: right; margin-top:30px; margin-right:35px; padding-right:35px; position: relative; }
-      .mainnav ul { float: right;}
-      .mainnav li { float: left; padding:0 10px 0 0; margin:0 10px 0 0; background:url(../img/mainnav_li_background.png) no-repeat right 10px; }
-        .mainnav li.last { background:none; padding:0; margin:0; }
-      .mainnav a { color: #606060; text-decoration:none; font-weight:400; text-shadow: 1px 1px 2px #FFF; line-height:55px; }
-        .mainnav a:hover { text-decoration:underline; }
-        .mainnav .active a { font-family:'Museo-700'; color: #549ab7; background:url(../img/mainnav_active.png) no-repeat center 40px; overflow: visible; height:90px; display: block; }
-      .mainnav .socialtoggle { position: absolute; top:17px; right:0; height:21px; width:21px; background:url(../img/mainnav_social.png) no-repeat; }
-        .mainnav .socialtoggle:hover { background-position: 0 -30px;}
+    .fixednav { background:url(../img/mainnav_background.png) repeat-x; height:125px; font-size:16px; font-family:'Museo-500'; position: relative; }
+    .fixednav h1 { margin:0; }
+    .fixednav h1 a { background:url(../img/logo.png) no-repeat; height:49px; width:237px; position: absolute; top:35px; left:30px; }
+    .mainnav { float: right; margin-top:30px; margin-right:35px; padding-right:35px; position: relative; }
+    .mainnav ul { float: right;}
+    .mainnav li { float: left; padding:0 10px 0 0; margin:0 10px 0 0; background:url(../img/mainnav_li_background.png) no-repeat right 10px; }
+      .mainnav li.last { background:none; padding:0; margin:0; }
+    .mainnav a { color: #606060; text-decoration:none; font-weight:400; text-shadow: 1px 1px 2px #FFF; line-height:55px; }
+      .mainnav a:hover { text-decoration:underline; }
+      .mainnav .active a { font-family:'Museo-700'; color: #549ab7; background:url(../img/mainnav_active.png) no-repeat center 40px; overflow: visible; height:90px; display: block; }
+    .mainnav .socialtoggle { position: absolute; top:17px; right:0; height:21px; width:21px; background:url(../img/mainnav_social.png) no-repeat; }
+      .mainnav .socialtoggle:hover { background-position: 0 -30px;}
 
   /* Donate */
-    .donate { }
-    .donate .button { background:url(../img/donate_button_sprite.png) repeat-x; height:145px; width:145px; display: block; position: absolute; left:50%; margin:0 0 0 -82px; top:-100px; }
-      .donate .button:hover { background-position:0 -150px; }
+  .donate { }
+  .donate .button { background:url(../img/donate_button_sprite.png) repeat-x; height:145px; width:145px; display: block; position: absolute; left:50%; margin:0 0 0 -82px; top:-100px; }
+    .donate .button:hover { background-position:0 -150px; }
 
   /* Hero */
-    .hero { padding:0 0 30px 0; overflow: hidden; position: relative; }
-    .hero .slide { float: left; width:1024px; overflow: hidden; }
-      .hero .slide.hide { display: none; }
-    .hero .slide img { width:100%; }
-    .hero .donate { }
+  .hero { padding:0 0 30px 0; overflow: hidden; position: relative; }
+  .hero .slide { float: left; width:1024px; overflow: hidden; position: relative; }
+    .hero .slide.hide { display: none; }
+  .hero .slide img { width:100%; }
+  .hero .donate { }
 
   /* Competition Section */
   .competition { }
@@ -132,6 +139,7 @@ td { vertical-align: top; }
   .competition .nexttext { text-shadow: 1px 1px 2px #f4f3f3; font-size:20px; color: #3dbbe6; font-family:'Museo-500'; }
   .competition .nexttext p { margin:0; }
   .competition .nexttext a { color: #3dbbe6; font-family:'Museo-700'; display: block !important; margin-top:5px; }
+  .section.competition .carousel { background:url(../img/section_overlay.png) 0 65px no-repeat; height:400px; position: relative; }
 
     /* Slide One */
     .competition .slideone .nexttext { padding:5px; margin-right:10px; margin-bottom:15px; height:167px; width:267px; float: left; }
@@ -142,7 +150,7 @@ td { vertical-align: top; }
     .competition .slidetwo .column li { color: #43b9ea; font-family: "Arial"; font-size: 11px; margin-bottom: 3px; }
     .competition .slidetwo .column.first { margin-left:100px; }
     .competition .slidetwo .column.last { background: none; }
-    .competition .slidetwo .nexttext { position: absolute; bottom: 65px; right: 100px; }
+    .competition .slidetwo .nexttext { float: right; margin-right: 100px; margin-top: 10px; }
     /* Slide Three */
     .competition .slidethree { padding-top:75px; height: 295px; }
     .competition .slidethree .column { width:350px; float: left; padding-right: 15px; margin-right: 18px; background: url(../img/slide_column_background.png) right 15px no-repeat; min-height: 100px; }
@@ -156,6 +164,9 @@ td { vertical-align: top; }
       .competition .slidethree .downloadrules:hover { background-position: 0 -60px; }
 
   /* Winners Section */
+  .section.winners .carousel { background:url(../img/section_overlay2.png) 0 0 repeat-x; width: 100%; height:400px; position: relative; }
+  .winners .carousel { padding-top: 8px; }
+  .winners .carousel li { float: left; margin-right: 10px; }
 
   /* Contacts Section */
   .contact fieldset { width:625px; margin:0 auto; }
