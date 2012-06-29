@@ -40,29 +40,29 @@ $(document).ready(function(){
     // });
   
   /* Initialize Carousels */
-  // $(".carousel ul").carouFredSel({
-  //   circular: false,
-  //   infinite: false,
-  //   width: "100%",
-  //   height: "auto",
-  //   auto: { play: false, duration: 3000 },
-  //   scroll:{duration: 1000, fx:"scroll", easing: "swing"},
-  //   prev: {
-  //      button: function() {
-  //         return $(this).parents(".section").find(".prev");
-  //      }
-  //   },
-  //   next: {
-  //      button: function() {
-  //         return $(this).parents(".section").find(".next");
-  //      }
-  //   },
-  //   pagination  : {
-  //      container: function() {
-  //         return $(this).parents(".section").find(".pager");
-  //      }
-  //   }
-  // });
+  $("#competition .carousel ul").carouFredSel({
+    circular: false,
+    infinite: false,
+    width: "100%",
+    height: "auto",
+    auto: { play: false, duration: 3000 },
+    scroll:{duration: 1000, fx:"scroll", easing: "swing"},
+    prev: {
+       button: function() {
+          return $(this).parents(".section").find(".prev");
+       }
+    },
+    next: {
+       button: function() {
+          return $(this).parents(".section").find(".next");
+       }
+    },
+    pagination  : {
+       container: function() {
+          return $(this).parents(".section").find(".pager");
+       }
+    }
+  });
 
 	/* Override - Initialize Main Hero */
 	$("#herocarousel").carouFredSel({
@@ -82,7 +82,14 @@ $(document).ready(function(){
     width: "100%",
     height: "auto",
     auto: { items: 1, visible: 1, play: true, pauseDuration: 4000, duration: 1000, pauseOnHover: true },
-    scroll:{ items: 1, duration: 1000, fx:"scroll", easing: "swing"},
+    scroll:{ items: 1, duration: 1000, fx:"scroll", easing: "swing",
+      onBefore    : function( oldItems, newItems, newSizes ) {
+        oldItems.removeClass( "active" );
+      },
+      onAfter     : function( oldItems, newItems, newSizes ) {
+        $(newItems[1]).addClass( "active" );
+      }
+    },
     items: { visible : "+1" },
     prev: {
        button: function() {

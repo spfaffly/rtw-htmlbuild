@@ -94,9 +94,10 @@ td { vertical-align: top; }
   .thumbnail { position: relative; }
   a.thumbnail { float: left; }
   .thumbnail img { float: left; }
-  .thumbnail .description { position: absolute; width: 100%; left: 0; bottom: -40px; background: #09d5ce; padding: 8px 0; text-align: center; font-family:'Museo-700'; font-weight:400; color: #333; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; -o-transition:all 0.5s ease-in-out; -ms-transition:all 0.5s ease-in-out; transition:all 0.5s ease-in-out; }
+  .thumbnail .description { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); -moz-opacity:0.8; -khtml-opacity: 0.8; -webkit-opacity: 0.8; -ms-opacity: 0.8; opacity: 0.8; position: absolute; width: 100%; left: 0; bottom: -40px; background: #09d5ce; padding: 8px 0; text-align: center; font-family:'Museo-700'; font-weight:400; color: #333; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; -o-transition:all 0.5s ease-in-out; -ms-transition:all 0.5s ease-in-out; transition:all 0.5s ease-in-out; }
+  .thumbnail .description p { padding:0; margin:0; opacity: 1; } /* TODO - Fix opacity on lettering */
   .thumbnail:hover .description { bottom: 0; }
-  .thumbnail.active .description { bottom: 0; }
+  .active .thumbnail .description { bottom: 0; }
 
   /* Header */
     /* Donate Nag */
@@ -139,7 +140,7 @@ td { vertical-align: top; }
   .competition .nexttext { text-shadow: 1px 1px 2px #f4f3f3; font-size:20px; color: #3dbbe6; font-family:'Museo-500'; }
   .competition .nexttext p { margin:0; }
   .competition .nexttext a { color: #3dbbe6; font-family:'Museo-700'; display: block !important; margin-top:5px; }
-  .section.competition .carousel { background:url(../img/section_overlay.png) 0 65px no-repeat; height:400px; position: relative; }
+  .section.competition .carousel { background:url(../img/section_overlay.png) 0 65px no-repeat; height:400px; position: relative; margin-bottom: 30px; }
 
     /* Slide One */
     .competition .slideone .nexttext { padding:5px; margin-right:10px; margin-bottom:15px; height:167px; width:267px; float: left; }
@@ -164,7 +165,7 @@ td { vertical-align: top; }
       .competition .slidethree .downloadrules:hover { background-position: 0 -60px; }
 
   /* Winners Section */
-  .section.winners .carousel { background:url(../img/section_overlay2.png) 0 0 repeat-x; width: 100%; height:400px; position: relative; }
+  .section.winners .carousel { background:url(../img/section_overlay2.png) 0 0 repeat-x; width: 100%; height:330px; margin-bottom: 30px; position: relative; }
   .winners .carousel { padding-top: 8px; }
   .winners .carousel li { float: left; margin-right: 10px; }
 
