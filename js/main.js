@@ -83,10 +83,10 @@ $(document).ready(function(){
     height: "auto",
     auto: { items: 1, visible: 1, play: true, pauseDuration: 4000, duration: 1000, pauseOnHover: true },
     scroll:{ items: 1, duration: 1000, fx:"scroll", easing: "swing",
-      onBefore    : function( oldItems, newItems, newSizes ) {
+      onBefore : function( oldItems, newItems, newSizes ) {
         oldItems.removeClass( "active" );
       },
-      onAfter     : function( oldItems, newItems, newSizes ) {
+      onAfter : function( oldItems, newItems, newSizes ) {
         $(newItems[1]).addClass( "active" );
       }
     },
@@ -106,6 +106,9 @@ $(document).ready(function(){
       //  container: function() {
       //     return $(this).parents(".section").find(".pager");
       //  }
+    },
+    onCreate : function(items){
+      $(items[1]).addClass( "active" );
     }
   });
 
