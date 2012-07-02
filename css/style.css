@@ -108,7 +108,7 @@ td { vertical-align: top; }
       .donatenag a.close:hover { background-position:0 -20px; }
 
     /* Main Nav */
-    .fixednav { background:url(../img/mainnav_background.png) repeat-x; height:125px; font-size:16px; font-family:'Museo-500'; position: relative; }
+    .fixednav { background:url(../img/mainnav_background.png) repeat-x; height:125px; font-size:13px; font-family:'Museo-500'; position: relative; }
     .fixednav h1 { margin:0; }
     .fixednav h1 a { background:url(../img/logo.png) no-repeat; height:49px; width:237px; position: absolute; top:35px; left:30px; }
     .mainnav { float: right; margin-top:30px; margin-right:35px; padding-right:35px; position: relative; }
