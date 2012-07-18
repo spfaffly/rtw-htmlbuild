@@ -39,7 +39,7 @@ $(document).ready(function(){
     //      sticky_navigation();
     // });
   
-  /* Initialize Carousels */
+  /* Competition Carousel */
   $("#competition .carousel ul").carouFredSel({
     circular: false,
     infinite: false,
@@ -64,7 +64,7 @@ $(document).ready(function(){
     }
   });
 
-	/* Override - Initialize Main Hero */
+	/* Main Hero Carousel */
 	$("#herocarousel").carouFredSel({
     width: "100%",
     height: "auto",
@@ -75,7 +75,7 @@ $(document).ready(function(){
     pagination: "#hero .pager"
 	});
 
-  /* Override - Initialize Winners */
+  /* Winners Carousel */
   $("#winners .carousel ul").carouFredSel({
     circular: true,
     infinite: true,
@@ -112,41 +112,14 @@ $(document).ready(function(){
     }
   });
 
-	/* Initialize Winners */
-	// @TODO: Custom callback functions to control scolling
-	// $("#winnercarousel").carouFredSel({
-	//     items: { visible: '+1' },
-	// 	auto: { items: 1, pauseDuration: 4000 },
-	//     width: "100%",
-	//     prev: '#winnerprev',
- //        next: '#winnernext',
- //        scroll: {
- //        	pauseOnHover: true,
- //        	onBefore: function(oldItems, newItems){
- //        		var count = 0;
- //        		//oldItems.removeClass('opacity');
- //        		newItems.each(function(){
- //        			if(count == 0 || count == 2){
- //        				$(this).addClass('opacity');
- //        			} else {
- //        				$(this).removeClass('opacity');
- //        			}
- //        			count++;
- //        		});
- //        	}
- //        },
- //        onCreate: function(items){ 
- //        	var count = 0;
- //    		//oldItems.removeClass('opacity');
- //    		items.each(function(){
- //    			if(count == 0 || count == 2){
- //    				$(this).addClass('opacity');
- //    			} else {
- //    				$(this).removeClass('opacity');
- //    			}
- //    			count++;
- //    		});
- //        }
-	// });
-
+  /* POTM Carousel */
+  $("#potm .carousel ul").carouFredSel({
+    width: "100%",
+    height: "auto",
+    auto: { play: false, duration: 3000 },
+    scroll:{duration: 1000, fx:"scroll", pauseOnHover:true, easing: "swing"},
+    prev: { button: "#potm .prev", key: "left" },
+    next: { button: "#potm .next", key: "right" },
+    pagination: "#potm .pager"
+  });
 });

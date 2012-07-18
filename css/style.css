@@ -64,7 +64,7 @@ td { vertical-align: top; }
 
   /* Overall Page */
   body { background:url(../img/background.jpg) repeat center; font-family:Arial; font-size:14px; min-width:1024px; }
-  h2 { color: #212121; font-family:'Museo-700'; font-weight:400; font-size:32px; text-align:center; background: -webkit-gradient(linear, left top, left bottom, from(#353535), to(#0e0e0e)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  h2 { color: #212121; font-family:'Museo-500'; font-weight:400; font-size:24px; text-transform: uppercase; text-align:center; background: -webkit-gradient(linear, left top, left bottom, from(#353535), to(#0e0e0e)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   h3 { color: #41baeb; font-family:'Museo-500'; font-weight:400; font-size:26px; text-shadow: 1px 1px 2px #f4f3f3; }
   a { color:#0189bb; text-decoration:none; }
   a:hover { color:#0189bb; text-decoration:underline; }
@@ -87,7 +87,7 @@ td { vertical-align: top; }
 
   /* Pager Buttons */
   .pager { text-align:center; }
-  .pager a { margin-right:8px; background:url(../img/pager_button_sprite.png) -21px 0 no-repeat; height:13px; width:13px; display: inline-block; border: 0; font: 0/0 a; text-shadow: none; color: transparent; background-color: transparent; }
+  .pager a { margin-right:8px; background:url(../img/pager_button_sprite.png) -21px 0 no-repeat; height:13px; width:13px; display: inline-block; border: 0; font: 0/0; text-shadow: none; color: transparent; background-color: transparent; }
   .pager a.selected { background-position:0 0; }
 
   /* Thumbnail */
@@ -165,12 +165,12 @@ td { vertical-align: top; }
       .competition .slidethree .downloadrules:hover { background-position: 0 -60px; }
 
   /* Winners Section */
-  .section.winners .carousel { background:url(../img/section_overlay2.png) 0 0 repeat-x; width: 100%; height:330px; margin-bottom: 30px; position: relative; }
+  .winners.section .carousel { background:url(../img/section_overlay2.png) 0 0 repeat-x; width: 100%; height:330px; margin-bottom: 30px; position: relative; }
   .winners .carousel { padding-top: 8px; }
   .winners .carousel li { float: left; margin-right: 10px; }
 
   /* Contacts Section */
-  .contact fieldset { width:625px; margin:0 auto; }
+  .contact fieldset { width:625px; margin:0 auto; padding-bottom: 40px; }
   .contact .formfield { border-radius: 3px; border:none; background: #3392b9; padding:10px; color:#fff; }
   .contact .text { float:left; clear:left; width:280px; margin-bottom: 10px; }
     .contact .text::-webkit-input-placeholder { color:#FFF; }
@@ -178,6 +178,15 @@ td { vertical-align: top; }
     .contact .textarea::-webkit-input-placeholder { color:#FFF; }
   .contact .send { background: url(../img/contact_send_button.png) no-repeat; height: 30px; width: 110px; margin:0 auto; margin-top:20px; margin-left: -55px; }
     .contact .send:hover { background-position: 0 -40px; }
+
+  /* POTM Section */
+  .potm.section .carousel { height:330px; position: relative; margin-bottom: 30px; }
+  .potm .carousel li { float: left; background: url(../img/potm_background.png) no-repeat; margin:0 79px; width:866px; height: 320px; overflow: hidden; position: relative; }
+  .potm .carousel li img { margin: 8px; width: 850px; }
+  .potm .carousel .photographer { margin-top:4px; width: 100%; text-align: center; color:#BBB; font-size: 20px; }
+  .potm .carousel .photographer span { color:#000; }
+  .potm .pager { margin-top:10px; }
+
   /* Footer */
   .footer { position: relative; height:346px; width:100%; margin:30px 0 0 0; background:url(../img/footer_background.png) repeat-x top center; color:#EEE; font-family:'Museo-700'; font-size:12px; overflow: hidden; }
   .footer .content { width:950px; padding-top:34px; }
@@ -200,8 +209,8 @@ td { vertical-align: top; }
       .footer .social .facebook:hover { background-position:0 -30px; }
     .footer .social .twitter { background-position:-30px 0; }
       .footer .social .twitter:hover { background-position:-30px -30px; }
-    .footer .social .youtube { background-position:-60px 0; }
-      .footer .social .youtube:hover { background-position:-60px -30px; }
+    .footer .social .vimeo { background-position:-60px 0; }
+      .footer .social .vimeo:hover { background-position:-60px -30px; }
     .footer .social .flickr { background-position:-86px 0; }
       .footer .social .flickr:hover { background-position:-86px -30px; }
     /* Footer Brand */
