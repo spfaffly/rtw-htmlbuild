@@ -4,9 +4,9 @@ $(document).ready(function(){
   // initiate page scroller plugin
   $('body').pageScroller({
     navigation: '#mainnav',
-    scrollOffset: -130
+    scrollOffset: -140
   });
-  
+
   /* Competition Carousel */
   $("#competition .carousel ul").carouFredSel({
     circular: false,
