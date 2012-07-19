@@ -86,7 +86,7 @@ td { vertical-align: top; }
       .arrow.next:hover { background-position:-70px -70px;}
 
   /* Pager Buttons */
-  .pager { text-align:center; }
+  .pager { text-align:center; margin-top: 10px; }
   .pager a { margin-right:8px; background:url(../img/pager_button_sprite.png) -21px 0 no-repeat; height:13px; width:13px; display: inline-block; border: 0; font: 0/0; text-shadow: none; color: transparent; background-color: transparent; }
   .pager a.selected { background-position:0 0; }
 
@@ -185,7 +185,6 @@ td { vertical-align: top; }
   .potm .carousel li img { margin: 8px; width: 850px; }
   .potm .carousel .photographer { font-family:'Museo-500'; margin-top:4px; width: 100%; text-align: center; color:#BBB; font-size: 20px; }
   .potm .carousel .photographer span { color:#000; }
-  .potm .pager { margin-top:10px; }
   .potm .explanation { color:#3dbbe6; font-size: 24px; font-family:'Museo-500'; width: 850px; margin: 0 auto; margin-bottom: 25px; }
   .potm .legal { color:#000; font-size: 11px; width: 850px; margin: 0 auto; margin-bottom: 25px; }
   .potm .steps { background: #33fff8; font-family: "Arial"; font-size: 17px; width:1024px; height:66px; margin-bottom: 25px; }
