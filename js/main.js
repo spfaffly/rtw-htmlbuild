@@ -122,4 +122,29 @@ $(document).ready(function(){
     next: { button: "#potm .next", key: "right" },
     pagination: "#potm .pager"
   });
+
+  /* Competition Carousel */
+  $("#aboutus .carousel ul").carouFredSel({
+    circular: false,
+    infinite: false,
+    width: "100%",
+    height: "auto",
+    auto: { play: false, duration: 3000 },
+    scroll:{duration: 1000, fx:"scroll", easing: "swing"},
+    prev: {
+       button: function() {
+          return $(this).parents(".section").find(".prev");
+       }
+    },
+    next: {
+       button: function() {
+          return $(this).parents(".section").find(".next");
+       }
+    },
+    pagination  : {
+       container: function() {
+          return $(this).parents(".section").find(".pager");
+       }
+    }
+  });
 });

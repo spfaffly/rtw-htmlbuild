@@ -75,7 +75,7 @@ td { vertical-align: top; }
   /* Section */
   .section { }
   .section h2 { margin:15px 0; }
-  .section .slide { float: left; width:1024px; height:370px; }
+  .section .slide { float: left; width:1024px; height:380px; }
   .section .carousel .pager { }
 
   /* Arrow Buttons */
@@ -195,6 +195,26 @@ td { vertical-align: top; }
     .potm .steps .third { background-position: 0 -419px; width: 290px; padding-left: 45px; }
   .potm .donate { height: 60px; width: 230px; background: url(../img/potm_donate_sprite.png) no-repeat; display: block; margin: 0 auto; margin-bottom: 20px; }
     .potm .donate:hover { background-position: 0 -70px; }
+  /* About Us Section */
+  .aboutus { }
+  .aboutus.section .carousel { background:url(../img/section_overlay.png) 0 25px no-repeat; height:320px; position: relative; margin-bottom: 45px; }
+  .aboutus.section .carousel .slide { height: 325px; }
+  /* Slide One */
+    .aboutus .slideone .column.left { float: left; clear: left; margin-left: 70px; margin-top: 15px; width: 500px; }
+    .aboutus .slideone .column.left iframe { border: 1px solid #CCC; }
+    .aboutus .slideone .column.right { clear: right; float: right; background: none; width:350px; margin-right: 75px; margin-top: 60px; }
+    .aboutus .slideone .column.right p { font-size: 18px; color:#3dbbe6; font-family:'Museo-500'; }
+    .aboutus .slideone .column.right p span { font-family:'Museo-700'; }
+    .aboutus .slideone .column.right .nexttext { color:#3dbbe6; font-family:'Museo-700'; font-size: 20px; }
+    .aboutus .slideone .column.right .nexttext a { color:#3dbbe6; }
+  /* Slide Two */
+    .aboutus .slidetwo .column.left { float: left; clear: left; margin-left: 70px; margin-top: 15px; width: 500px; }
+    .aboutus .slidetwo .column.left iframe { border: 1px solid #CCC; }
+    .aboutus .slidetwo .column.right { clear: right; float: right; background: none; width:350px; margin-right: 75px; margin-top: 60px; }
+    .aboutus .slidetwo .column.right p { font-size: 18px; color:#3dbbe6; font-family:'Museo-500'; }
+    .aboutus .slidetwo .column.right p span { font-family:'Museo-700'; }
+    .aboutus .slidetwo .column.right .nexttext { color:#3dbbe6; font-family:'Museo-700'; font-size: 20px; }
+    .aboutus .slidetwo .column.right .nexttext a { color:#3dbbe6; }
 
   /* Footer */
   .footer { position: relative; height:346px; width:100%; margin:30px 0 0 0; background:url(../img/footer_background.png) repeat-x top center; color:#EEE; font-family:'Museo-700'; font-size:12px; overflow: hidden; }
