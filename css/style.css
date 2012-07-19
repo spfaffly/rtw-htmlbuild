@@ -101,7 +101,7 @@ td { vertical-align: top; }
 
   /* Header */
     /* Donate Nag */
-    .donatenag { height:24px; line-height:24px; background:#43b9ea; color:#000; }
+    .donatenag { position: absolute; top: 0; left: 0; z-index: 1000; width: 100%; height:24px; line-height:24px; background:#43b9ea; color:#000; }
     .donatenag p { width: 1024px; margin:0 auto; font-family:'Arial'; font-weight:700; text-indent:10px; }
     .donatenag a { color:#FFF; font-family:'Museo-700'; font-weight:400; }
     .donatenag a.close { float: right; background:url(../img/donatenag_close.png) no-repeat; height:16px; width:16px; margin-top:4px; }
@@ -128,7 +128,7 @@ td { vertical-align: top; }
     .donate .button:hover { background-position:0 -150px; }
 
   /* Hero */
-  .hero { padding:0 0 30px 0; overflow: hidden; position: relative; }
+  .hero { padding:0 0 30px 0; margin-top:101px; overflow: hidden; position: relative; }
   .hero .slide { float: left; width:1024px; overflow: hidden; position: relative; }
     .hero .slide.hide { display: none; }
   .hero .slide img { width:100%; }
@@ -170,16 +170,6 @@ td { vertical-align: top; }
   .winners .carousel { padding-top: 8px; }
   .winners .carousel li { float: left; margin-right: 10px; }
 
-  /* Contacts Section */
-  .contact fieldset { width:625px; margin:0 auto; padding-bottom: 40px; }
-  .contact .formfield { border-radius: 3px; border:none; background: #3392b9; padding:10px; color:#fff; }
-  .contact .text { float:left; clear:left; width:280px; margin-bottom: 10px; }
-    .contact .text::-webkit-input-placeholder { color:#FFF; }
-  .contact .textarea { float:right; clear:right; width:280px; height: 63px; resize:none; }
-    .contact .textarea::-webkit-input-placeholder { color:#FFF; }
-  .contact .send { background: url(../img/contact_send_button.png) no-repeat; height: 30px; width: 110px; margin:0 auto; margin-top:20px; margin-left: -55px; }
-    .contact .send:hover { background-position: 0 -40px; }
-
   /* POTM Section */
   .potm.section .carousel { height:330px; position: relative; margin-bottom: 30px; }
   .potm .carousel li { float: left; background: url(../img/potm_background.png) no-repeat; margin:0 79px; width:866px; height: 320px; overflow: hidden; position: relative; }
@@ -215,6 +205,16 @@ td { vertical-align: top; }
     .aboutus .slidetwo .column.right p span { font-family:'Museo-700'; }
     .aboutus .slidetwo .column.right .nexttext { color:#3dbbe6; font-family:'Museo-700'; font-size: 20px; }
     .aboutus .slidetwo .column.right .nexttext a { color:#3dbbe6; }
+
+  /* Contacts Section */
+  .contact fieldset { width:625px; margin:0 auto; padding-bottom: 60px; }
+  .contact .formfield { border-radius: 3px; border:none; background: #3392b9; padding:10px; color:#fff; }
+  .contact .text { float:left; clear:left; width:280px; margin-bottom: 10px; }
+    .contact .text::-webkit-input-placeholder { color:#FFF; }
+  .contact .textarea { float:right; clear:right; width:280px; height: 63px; resize:none; }
+    .contact .textarea::-webkit-input-placeholder { color:#FFF; }
+  .contact .send { background: url(../img/contact_send_button.png) no-repeat; height: 30px; width: 110px; margin:0 auto; margin-top:20px; margin-left: -55px; }
+    .contact .send:hover { background-position: 0 -40px; }
 
   /* Footer */
   .footer { position: relative; height:346px; width:100%; margin:30px 0 0 0; background:url(../img/footer_background.png) repeat-x top center; color:#EEE; font-family:'Museo-700'; font-size:12px; overflow: hidden; }
