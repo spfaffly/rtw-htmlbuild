@@ -7,7 +7,7 @@ $(document).ready(function(){
       var section = $(this).attr('href');
       if($(section).length > 0){
          $('html, body').animate({
-            scrollTop: $(section).offset().top - 100
+            scrollTop: $(section).offset().top - 120
          }, 1000);
 	 	} else {
 	 		$('html, body').animate({scrollTop: 0}, 1000);

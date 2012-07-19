@@ -297,7 +297,13 @@ td { vertical-align: top; }
                 font-style: normal;
               }
   
-  /* Plugin CSS */
+/* Transition CSS */
+.transition {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
