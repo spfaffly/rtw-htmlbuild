@@ -118,8 +118,15 @@ td { vertical-align: top; }
       .mainnav li.last { background:none; padding:0; margin:0; }
     .mainnav a { color: #606060; border: none; text-decoration:none; font-weight:400; text-shadow: 1px 1px 2px #FFF; line-height:55px; }
       .mainnav a:hover { text-decoration:underline; }
-      .mainnav .active a { font-family:'Museo-700'; margin-right: -1px; color: #549ab7; background:url(../img/mainnav_active.png) no-repeat center 40px; overflow: visible; height:90px; display: block; }
+      .mainnav .active a { font-family:'Museo-500'; color: #549ab7; }
       .mainnav a:focus { outline: none; }
+      .mainnav .earth { background:url(../img/mainnav_active.png) no-repeat; height:90px; display: block; height: 40px; width: 30px; left:5px; bottom: -30px; position: absolute; }
+        .mainnav .earth.home { left:5px; }
+        .mainnav .earth.competition { left:100px; }
+        .mainnav .earth.winners { left:190px; }
+        .mainnav .earth.potm { left:250px; }
+        .mainnav .earth.aboutus { left:315px; }
+        .mainnav .earth.contactus { left:388px; }
     .mainnav .socialtoggle { position: absolute; top:17px; right:0; height:21px; width:21px; background:url(../img/mainnav_social.png) no-repeat; }
       .mainnav .socialtoggle:hover { background-position: 0 -30px;}
 
@@ -186,8 +193,10 @@ td { vertical-align: top; }
     .potm .steps .third { background-position: 0 -419px; width: 290px; padding-left: 45px; }
   .potm .donate { height: 60px; width: 230px; background: url(../img/potm_donate_sprite.png) no-repeat; display: block; margin: 0 auto; margin-bottom: 20px; }
     .potm .donate:hover { background-position: 0 -70px; }
+
   /* About Us Section */
   .aboutus { }
+  .aboutus.section { margin-bottom: 40px;}
   .aboutus.section .carousel { background:url(../img/section_overlay.png) 0 25px no-repeat; height:320px; position: relative; margin-bottom: 45px; }
   .aboutus.section .carousel .slide { height: 325px; }
   /* Slide One */
@@ -208,7 +217,7 @@ td { vertical-align: top; }
     .aboutus .slidetwo .column.right .nexttext a { color:#3dbbe6; }
 
   /* Contacts Section */
-  .contact fieldset { width:625px; margin:0 auto; padding-bottom: 60px; }
+  .contact fieldset { width:625px; margin:0 auto; padding-bottom: 100px; }
   .contact .formfield { border-radius: 3px; border:none; background: #3392b9; padding:10px; color:#fff; }
   .contact .text { float:left; clear:left; width:280px; margin-bottom: 10px; }
     .contact .text::-webkit-input-placeholder { color:#FFF; }
@@ -304,6 +313,13 @@ td { vertical-align: top; }
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+}
+
+.transitionnav {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 @media only screen and (min-width: 35em) {

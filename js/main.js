@@ -115,4 +115,27 @@ $(document).ready(function(){
        }
     }
   });
+
+  // Show the donate nag if cookie is null
+  if($.cookie('donatenag') == null){
+    setTimeout(function(){
+      $('#donatenag').css({top:-30}).removeClass('hidden').animate({top:0}, 1000);
+    }, 3000);
+  }
+
+  /* Donate Nag */
+  $('#donatenag .action_closenag').on('click', function(event){
+    event.preventDefault();
+    $('#donatenag').animate({top:-30});
+    $.cookie('donatenag', true);
+  });
+
+  /* Donate dropdown */
+  $('#hero .donate .button').hover(function(){
+    $(this).animate({top:-40});
+  }, function(){
+    $(this).animate({top:-100});
+  });
+
+  
 });
