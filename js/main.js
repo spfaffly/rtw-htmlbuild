@@ -138,5 +138,46 @@ $(document).ready(function(){
     $(this).animate({top:-100});
   });
 
+  /* Contact Us Form */
+  $('#contactform').submit(function(event){
+    event.preventDefault();
+
+    // Serialize form data
+    var formdata = $(this).serializeArray();
+
+    // Set error data
+    var error = false;
+    var errormessage = new Array();
+
+    // Iterate through each form element
+    $.each(formdata, function(key, value){
+      // Check for name
+      if(value['name'] == 'name'){
+        if(value['value'] == ''){
+          error = true;
+          errormessage.push('Please enter your name');
+        }
+      }
+
+      // Check for email
+      if(value['name'] == 'email'){
+        if(value['value'] == ''){
+          error = true;
+          errormessage.push('Please enter your email');
+        }
+      }
+
+      // Check for message
+      if(value['name'] == 'message'){
+        if(value['value'] == ''){
+          error = true;
+          errormessage.push('Please enter your message');
+        }
+      }
+    });
+
+    log(errormessage);
+  });
+
 
 });
