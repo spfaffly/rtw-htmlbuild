@@ -50,12 +50,13 @@ $(document).ready(function(){
     width: "100%",
     height: "auto",
     auto: { items: 1, visible: 1, play: true, pauseDuration: 4000, duration: 1000, pauseOnHover: true },
-    scroll:{ items: 1, duration: 1000, fx:"scroll", easing: "swing",
+    scroll:{ items: 1, duration: 1000, fx:"scroll",
       onBefore : function( oldItems, newItems, newSizes ) {
         oldItems.removeClass( "active" );
       },
       onAfter : function( oldItems, newItems, newSizes ) {
-        $(newItems[1]).addClass( "active" );
+         $(newItems[1]).addClass( "active" );
+        //$(newItems[1]).animate( {bottom: 0} );
       }
     },
     items: { visible : "+1" },
@@ -137,5 +138,5 @@ $(document).ready(function(){
     $(this).animate({top:-100});
   });
 
-  
+
 });
