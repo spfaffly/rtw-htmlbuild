@@ -211,10 +211,10 @@ td { vertical-align: top; }
     .aboutus .slidetwo .column.left { float: left; clear: left; margin-left: 70px; margin-top: 15px; width: 500px; }
     .aboutus .slidetwo .column.left iframe { border: 1px solid #CCC; }
     .aboutus .slidetwo .column.right { clear: right; float: right; background: none; width:350px; margin-right: 75px; margin-top: 60px; }
-    .aboutus .slidetwo .column.right p { font-size: 18px; color:#3dbbe6; font-family:'Museo-500'; }
+    .aboutus .slidetwo .column.right p { font-size: 18px; color:#3dbbe6; font-family:'Museo-500'; height: 170px; }
     .aboutus .slidetwo .column.right p span { font-family:'Museo-700'; }
-    .aboutus .slidetwo .column.right .nexttext { color:#3dbbe6; font-family:'Museo-700'; font-size: 20px; }
-    .aboutus .slidetwo .column.right .nexttext a { color:#3dbbe6; }
+    .aboutus .slidetwo .column.right .nexttext { font-family:'Museo-700'; font-size: 12px; text-align: right; }
+    .aboutus .slidetwo .column.right .nexttext a { color:#999999; }
 
   /* Contacts Section */
   .contact fieldset { width:625px; margin:0 auto; padding-bottom: 100px; height: 130px; }
