@@ -176,6 +176,17 @@ $(document).ready(function(){
       }
     });
 
+    // Submit form?
+    if(error){
+      // Display error messages
+      log(errormessage);
+    } else {
+      // Submit form to AJAX page
+      $.getJSON('contactus.php', function(response){
+
+      });
+    }
+
     log(errormessage);
   });
 
