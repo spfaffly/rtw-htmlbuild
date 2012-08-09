@@ -75,7 +75,7 @@ td { vertical-align: top; }
   /* Section */
   .section { }
   .section h2 { margin:15px 0; }
-  .section .slide { float: left; width:1024px; height:380px; }
+  .section .slide { float: left; width:1024px; height:465px; }
   .section .carousel .pager { }
 
   /* Arrow Buttons */
