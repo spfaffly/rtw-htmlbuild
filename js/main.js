@@ -159,7 +159,6 @@ $(document).ready(function(){
         if(value['value'] == ''){
           error = true;
           errormessage.push('Please enter your name');
-          log('[name="' + value['name'] + '"]');
           $('[name="' + value['name'] + '"]').addClass('error');
         }
       }
@@ -169,7 +168,6 @@ $(document).ready(function(){
         if(value['value'] == ''){
           error = true;
           errormessage.push('Please enter your email');
-          log('[name="' + value['name'] + '"]');
           $('[name="' + value['name'] + '"]').addClass('error');
         }
       }
@@ -179,7 +177,6 @@ $(document).ready(function(){
         if(value['value'] == ''){
           error = true;
           errormessage.push('Please enter your message');
-          log('[name="' + value['name'] + '"]');
           $('[name="' + value['name'] + '"]').addClass('error');
         }
       }
@@ -187,18 +184,20 @@ $(document).ready(function(){
 
     // Submit form?
     if(error){
-      // Display error messages
-      // log(errormessage);
+      // Display error messages?
       var html = '';
       $.each(errormessage, function(key, value){
         html += '<li>' + value + '</li>';
       });
-
       $('#contactuserror').html(html);
     } else {
       // Submit form to AJAX page
       $.getJSON('contactus.php', formdata, function(response){
-        log(response);
+        $('#contactform fieldset').animate({opacity:0}, function(){
+          $('#contactform fieldset').html('<div class="thanks"><h3>Thanks for contacting us.</h3><p>We will be in touch with you shortly.</p></div>');
+          $('#contactform fieldset').animate({opacity:1});
+        });
+        
       });
     }
   });

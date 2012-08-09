@@ -217,7 +217,7 @@ td { vertical-align: top; }
     .aboutus .slidetwo .column.right .nexttext a { color:#3dbbe6; }
 
   /* Contacts Section */
-  .contact fieldset { width:625px; margin:0 auto; padding-bottom: 100px; }
+  .contact fieldset { width:625px; margin:0 auto; padding-bottom: 100px; height: 130px; }
   .contact .formfield { border-radius: 3px; border:none; background: #3392b9; padding:10px; color:#fff; }
   .contact .text { float:left; clear:left; width:280px; margin-bottom: 10px; }
     .contact .text::-webkit-input-placeholder { color:#FFF; }
@@ -229,6 +229,11 @@ td { vertical-align: top; }
     .contact .send:hover { background-position: 0 -40px; }
     /* Error */
     .contact .contactuserror { margin: 0; padding: 0; width: 300px; margin-left: 240px; clear: both; margin-bottom: 10px; }
+
+    /* Thanks */
+    .contact .thanks { /*width:625px; margin:0 auto; padding-bottom: 100px;*/ text-align: center; }
+    .contact .thanks h3 { margin-bottom: 0; }
+    .contact .thanks p { margin-top: 5px; }
 
   /* Footer */
   .footer { position: relative; height:346px; width:100%; margin:30px 0 0 0; background:url(../img/footer_background.png) repeat-x top center; color:#EEE; font-family:'Museo-700'; font-size:12px; overflow: hidden; }
