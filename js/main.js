@@ -142,6 +142,9 @@ $(document).ready(function(){
   $('#contactform').submit(function(event){
     event.preventDefault();
 
+    // Remove old error classes
+    $(this).find('input, textarea').removeClass('error');
+
     // Serialize form data
     var formdata = $(this).serializeArray();
 
@@ -156,6 +159,8 @@ $(document).ready(function(){
         if(value['value'] == ''){
           error = true;
           errormessage.push('Please enter your name');
+          log('[name="' + value['name'] + '"]');
+          $('[name="' + value['name'] + '"]').addClass('error');
         }
       }
 
@@ -164,6 +169,8 @@ $(document).ready(function(){
         if(value['value'] == ''){
           error = true;
           errormessage.push('Please enter your email');
+          log('[name="' + value['name'] + '"]');
+          $('[name="' + value['name'] + '"]').addClass('error');
         }
       }
 
@@ -172,6 +179,8 @@ $(document).ready(function(){
         if(value['value'] == ''){
           error = true;
           errormessage.push('Please enter your message');
+          log('[name="' + value['name'] + '"]');
+          $('[name="' + value['name'] + '"]').addClass('error');
         }
       }
     });
@@ -179,16 +188,24 @@ $(document).ready(function(){
     // Submit form?
     if(error){
       // Display error messages
-      log(errormessage);
+      // log(errormessage);
+      var html = '';
+      $.each(errormessage, function(key, value){
+        html += '<li>' + value + '</li>';
+      });
+
+      $('#contactuserror').html(html);
     } else {
       // Submit form to AJAX page
-      $.getJSON('contactus.php', function(response){
-
+      $.getJSON('contactus.php', formdata, function(response){
+        log(response);
       });
     }
-
-    log(errormessage);
   });
-
+  
+  /* Remove error box */
+  $('#contactform input, #contactform textarea').on('focus', function(){
+    $(this).removeClass('error');
+  });
 
 });
