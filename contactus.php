@@ -25,7 +25,7 @@
 		if ($error){
 			echo json_encode(array('status' => 'failed', 'message' => 'Error in sending form.'));
 		} else {
-			$send_contact = mail('spfaffly@gmail.com', 'Contact Form - River to Well', $message, $headers);
+			$send_contact = mail('info@rivertowell.com', 'Contact Form - River to Well', $message, $headers);
 			if ($send_contact){
 				echo json_encode(array('status' => 'ok', 'message' => 'Email Sent'));
 			} else {
