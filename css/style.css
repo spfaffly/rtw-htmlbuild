@@ -276,7 +276,7 @@ td { vertical-align: top; }
         .csstransitions .team .member.david span { background-position: -644px -507px; }
 
   /* Contacts Section */
-  .contact fieldset { width:625px; margin:0 auto; padding-bottom: 100px; height: 130px; }
+  .contact fieldset { width:625px; margin:0 auto; padding-bottom: 180px; height: 130px; }
   .contact .formfield { border-radius: 3px; border:none; background: #3392b9; padding:10px; color:#fff; }
   .contact .text { float:left; clear:left; width:280px; margin-bottom: 10px; }
     .contact .text::-webkit-input-placeholder { color:#FFF; }
