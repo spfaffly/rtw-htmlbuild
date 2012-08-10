@@ -242,11 +242,16 @@ td { vertical-align: top; }
         .team .member.brian:hover { background-position: -483px -340px; }
       .team .member.rusty { background-position: -643px 0; }
         .team .member.rusty:hover { background-position: -643px -340px; }
-      .team .member.shane { background-position: 0 0; }
-      .team .member.lizzie { background-position: 0 0; }
-      .team .member.orion { background-position: 0 0; }
-      .team .member.whitney { background-position: 0 0; }
-      .team .member.david { background-position: 0 0; }
+      .team .member.shane { background-position: 0 -167px; }
+        .team .member.shane:hover { background-position: 0 -507px; }
+      .team .member.lizzie { background-position: -161px -167px; }
+        .team .member.lizzie:hover { background-position: -161px -507px; }
+      .team .member.orion { background-position: -322px -167px; }
+        .team .member.orion:hover { background-position: -322px -507px; }
+      .team .member.whitney { background-position: -483px -167px; }
+        .team .member.whitney:hover { background-position: -483px -507px; }
+      .team .member.david { background-position: -644px -167px; }
+        .team .member.david:hover { background-position: -644px -507px; }
 
   /* Contacts Section */
   .contact fieldset { width:625px; margin:0 auto; padding-bottom: 100px; height: 130px; }
