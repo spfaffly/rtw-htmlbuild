@@ -220,8 +220,23 @@ $(document).ready(function(){
   /* Donate box */
   $('.action_donate').on('click', function(event){
     event.preventDefault();
-    $.colorbox({href:"http://apple.com", iframe:true, width:'600px', height:'400px', opacity: 0.6, fixed: true});
+    $.colorbox({href:"http://placehold.it/350x150&text=donate+action+here!", iframe:true, width:'600px', height:'400px', opacity: 0.6, fixed: true});
     log('donate trigger!');
+  });
+
+  /* Submit box */
+  $('.action_submit').on('click', function(event){
+    event.preventDefault();
+    $.colorbox({href:"http://placehold.it/350x150&text=submit+action+here!", iframe:true, width:'600px', height:'400px', opacity: 0.6, fixed: true});
+    log('submit trigger!');
+  });
+
+  /* Rules box */
+  $('.action_rules').on('click', function(event){
+    // event.preventDefault();
+    // $.colorbox({href:"http://placehold.it/350x150&text=rules+action+here!", iframe:true, width:'600px', height:'400px', opacity: 0.6, fixed: true});
+    // log('rules trigger!');
+
   });
 
 });
