@@ -217,4 +217,11 @@ $(document).ready(function(){
     $(this).removeClass('error');
   });
 
+  /* Donate box */
+  $('.action_donate').on('click', function(event){
+    event.preventDefault();
+    $.colorbox({href:"http://apple.com", iframe:true, width:'600px', height:'400px', opacity: 0.6, fixed: true});
+    log('donate trigger!');
+  });
+
 });

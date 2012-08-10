@@ -1,5 +1,7 @@
 <?php
 	/* Contact Us form script */
+	// Set error level
+	error_reporting(E_ALL ^ E_NOTICE);
 
 	// Set defaults
 	$error = false;
