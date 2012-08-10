@@ -155,11 +155,11 @@ td { vertical-align: top; }
     /* Slide One */
     .competition .slideone .column.left { float: left; clear: left; margin-left: 70px; margin-top: 15px; width: 500px; }
     .competition .slideone .column.left iframe { border: 1px solid #CCC; }
-    .competition .slideone .column.right { clear: right; float: right; background: none; width:350px; margin-right: 75px; margin-top: 60px; }
-    .competition .slideone .column.right p { font-size: 18px; color:#3dbbe6; font-family:'Museo-500'; }
+    .competition .slideone .column.right { clear: right; float: right; background: none; width:350px; margin-right: 75px; margin-top: 110px; }
+    .competition .slideone .column.right p { margin-bottom: 78px; font-size: 18px; color:#3dbbe6; font-family:'Museo-500'; background: #2ffbf4; color: #000; display: block; width: 265px; font-size: 13px; height: 50px; padding-left: 10px; padding-right: 10px; padding-top: 13px; }
     .competition .slideone .column.right p span { font-family:'Museo-700'; }
-    .competition .slideone .column.right .nexttext { color:#3dbbe6; font-family:'Museo-700'; font-size: 20px; }
-    .competition .slideone .column.right .nexttext a { color:#3dbbe6; }
+    .competition .slideone .column.right .nexttext { font-size: 12px; text-align: right; font-family:'Museo-700'; }
+    .competition .slideone .column.right .nexttext a { color:#999999; display: inline !important; }
 
     /* Slide Two */
     .competition .slidetwo .slidetwo { position: relative; }
@@ -169,6 +169,8 @@ td { vertical-align: top; }
     .competition .slidetwo .column.first { margin-left:100px; }
     .competition .slidetwo .column.last { background: none; }
     .competition .slidetwo .nexttext { float: right; margin-right: 100px; margin-top: 10px; }
+    .competition .slidetwo .column.right .nexttext { font-family:'Museo-700'; font-size: 12px; text-align: right; }
+    .competition .slidetwo .column.right .nexttext a { color:#999999; }
     /* Slide Three */
     .competition .slidethree { padding-top:35px; height: 295px; }
     .competition .slidethree .column { width:350px; float: left; padding-right: 15px; margin-right: 18px; background: url(../img/slide_column_background.png) right 15px no-repeat; min-height: 100px; }
