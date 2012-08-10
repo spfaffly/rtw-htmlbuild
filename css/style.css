@@ -226,6 +226,27 @@ td { vertical-align: top; }
     .aboutus .slidetwo .column.right p span { font-family:'Museo-700'; }
     .aboutus .slidetwo .column.right .nexttext { font-family:'Museo-700'; font-size: 12px; text-align: right; }
     .aboutus .slidetwo .column.right .nexttext a { color:#999999; }
+  /* Team Members */
+    .team { margin-left: 70px !important; margin-top: 15px !important; width: 825px; height: 155px; float: left; clear: both; }
+      .team.rowtwo { margin-left: 150px !important; margin-top: -20px !important;  }
+    .team .member { height: 152px; width: 152px; background: url(../img/about/team_members_sprite.png) no-repeat; display: block; float: left; margin-right: 10px; }
+    .team .member:hover { background-position: 0 -340px; }
+      /* Individuals */
+      .team .member.ken { background-position: 0 0; }
+        .team .member.ken:hover { background-position: 0 -340px; }
+      .team .member.kelsey { background-position: -160px 0; }
+        .team .member.kelsey:hover { background-position: -160px -340px; }
+      .team .member.shannon { background-position: -322px 0; }
+        .team .member.shannon:hover { background-position: -322px -340px; }
+      .team .member.brian { background-position: -483px 0; }
+        .team .member.brian:hover { background-position: -483px -340px; }
+      .team .member.rusty { background-position: -643px 0; }
+        .team .member.rusty:hover { background-position: -643px -340px; }
+      .team .member.shane { background-position: 0 0; }
+      .team .member.lizzie { background-position: 0 0; }
+      .team .member.orion { background-position: 0 0; }
+      .team .member.whitney { background-position: 0 0; }
+      .team .member.david { background-position: 0 0; }
 
   /* Contacts Section */
   .contact fieldset { width:625px; margin:0 auto; padding-bottom: 100px; height: 130px; }
