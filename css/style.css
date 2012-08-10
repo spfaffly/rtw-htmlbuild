@@ -229,29 +229,51 @@ td { vertical-align: top; }
   /* Team Members */
     .team { margin-left: 70px !important; margin-top: 15px !important; width: 825px; height: 155px; float: left; clear: both; }
       .team.rowtwo { margin-left: 150px !important; margin-top: -20px !important;  }
-    .team .member { height: 152px; width: 152px; background: url(../img/about/team_members_sprite.png) no-repeat; display: block; float: left; margin-right: 10px; }
+    .team .member { position: relative; height: 152px; width: 152px; background: url(../img/about/team_members_sprite.png) no-repeat; display: block; float: left; margin-right: 10px; }
     .team .member:hover { background-position: 0 -340px; }
+    .team .member span { position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: url(../img/about/team_members_sprite.png) no-repeat; background-position: 0 -340px; opacity: 0; -webkit-transition: opacity 0.5s; -moz-transition: opacity 0.5s; -o-transition: opacity 0.5s; }
+    .team .member:hover span { opacity: 1; }
+
       /* Individuals */
       .team .member.ken { background-position: 0 0; }
-        .team .member.ken:hover { background-position: 0 -340px; }
+        .no-csstransitions .team .member.ken:hover { background-position: 0 -340px; }
+        .csstransitions .team .member.ken span { background-position: 0 -340px; }
+
       .team .member.kelsey { background-position: -160px 0; }
-        .team .member.kelsey:hover { background-position: -160px -340px; }
+        .no-csstransitions .team .member.kelsey:hover { background-position: -160px -340px; }
+        .csstransitions .team .member.kelsey span { background-position: -160px -340px; }
+
       .team .member.shannon { background-position: -322px 0; }
-        .team .member.shannon:hover { background-position: -322px -340px; }
+        .no-csstransitions .team .member.shannon:hover { background-position: -322px -340px; }
+        .csstransitions  .team .member.shannon span { background-position: -322px -340px; }
+
       .team .member.brian { background-position: -483px 0; }
-        .team .member.brian:hover { background-position: -483px -340px; }
+        .no-csstransitions .team .member.brian:hover { background-position: -483px -340px; }
+        .csstransitions .team .member.brian span { background-position: -483px -340px; }
+
       .team .member.rusty { background-position: -643px 0; }
-        .team .member.rusty:hover { background-position: -643px -340px; }
+        .no-csstransitions .team .member.rusty:hover { background-position: -643px -340px; }
+        .csstransitions .team .member.rusty span { background-position: -643px -340px; }
+
       .team .member.shane { background-position: 0 -167px; }
-        .team .member.shane:hover { background-position: 0 -507px; }
+        .no-csstransitions .team .member.shane:hover { background-position: 0 -507px; }
+        .csstransitions .team .member.shane span { background-position: 0 -507px; }
+
       .team .member.lizzie { background-position: -161px -167px; }
-        .team .member.lizzie:hover { background-position: -161px -507px; }
+        .no-csstransitions .team .member.lizzie:hover { background-position: -161px -507px; }
+        .csstransitions .team .member.lizzie span { background-position: -161px -507px; }
+
       .team .member.orion { background-position: -322px -167px; }
-        .team .member.orion:hover { background-position: -322px -507px; }
+        .no-csstransitions .team .member.orion:hover { background-position: -322px -507px; }
+        .csstransitions .team .member.orion span { background-position: -322px -507px; }
+
       .team .member.whitney { background-position: -483px -167px; }
-        .team .member.whitney:hover { background-position: -483px -507px; }
+        .no-csstransitions .team .member.whitney:hover { background-position: -483px -507px; }
+        .csstransitions .team .member.whitney span { background-position: -483px -507px; }
+
       .team .member.david { background-position: -644px -167px; }
-        .team .member.david:hover { background-position: -644px -507px; }
+        .no-csstransitions .team .member.david:hover { background-position: -644px -507px; }
+        .csstransitions .team .member.david span { background-position: -644px -507px; }
 
   /* Contacts Section */
   .contact fieldset { width:625px; margin:0 auto; padding-bottom: 100px; height: 130px; }

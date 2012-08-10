@@ -92,6 +92,11 @@ $(document).ready(function(){
     pagination: "#potm .pager"
   });
 
+  /* Team Member Links */
+  $('#potm li > a').on('click', function(event){
+    event.preventDefault();
+  });
+
   /* Competition Carousel */
   $("#aboutus .carousel ul").carouFredSel({
     circular: false,
@@ -115,6 +120,11 @@ $(document).ready(function(){
           return $(this).parents(".section").find(".pager");
        }
     }
+  });
+
+  /* Team Member Links */
+  $('#aboutus .team .member').on('click', function(event){
+    event.preventDefault();
   });
 
   // Show the donate nag if cookie is null
