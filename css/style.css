@@ -191,6 +191,7 @@ td { vertical-align: top; }
   /* POTM Section */
   .potm.section .carousel { height:330px; position: relative; margin-bottom: 30px; }
   .potm .carousel li { float: left; background: url(../img/potm_background.png) no-repeat; margin:0 79px; width:866px; height: 320px; overflow: hidden; position: relative; }
+  .potm .ribbon { background: url(../img/potm/ribbon_overlay.png) no-repeat; height: 165px; width: 171px; position: absolute; top: 0; right: 0; }
   .potm .carousel li img { margin: 8px; width: 850px; }
   .potm .carousel .photographer { font-family:'Museo-500'; margin-top:4px; width: 100%; text-align: center; color:#BBB; font-size: 20px; }
   .potm .carousel .photographer span { color:#000; }
