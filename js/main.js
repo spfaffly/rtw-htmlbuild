@@ -145,7 +145,7 @@ $(document).ready(function(){
   $('#hero .donate .button').hover(function(){
     $(this).animate({top:-40});
   }, function(){
-    $(this).animate({top:-100});
+    $(this).animate({top:-80});
   });
 
   /* Contact Us Form */

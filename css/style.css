@@ -102,7 +102,7 @@ td { vertical-align: top; }
   /* Header */
     /* Donate Nag */
     .donatenag { position: absolute; top: 0; left: 0; z-index: 1000; width: 100%; height:24px; line-height:24px; background:#43b9ea; color:#000; }
-    .donatenag p { width: 1024px; margin:0 auto; font-family:'Arial'; font-weight:700; text-indent:10px; }
+    .donatenag p { width: 1024px; margin:0 auto; font-family:'Arial'; font-weight:400; font-size: 12px; text-indent:10px; }
     .donatenag a { color:#FFF; font-family:'Museo-700'; font-weight:400; }
     .donatenag a.close { float: right; background:url(../img/donatenag_close.png) no-repeat; height:16px; width:16px; margin-top:4px; }
       .donatenag a.close:hover { background-position:0 -20px; }
@@ -111,7 +111,7 @@ td { vertical-align: top; }
     .fixednav { background:url(../img/mainnav_background.png) repeat-x; height:125px; font-size:13px; font-family:'Museo-500'; position: relative; }
       .fixednav.fixed { position: fixed; top: 0; left: 50%; z-index: 999; margin-left: -512px; width:1024px; height:125px; }
     .fixednav h1 { margin:0; }
-    .fixednav h1 a { background:url(../img/logo.png) no-repeat; height:49px; width:237px; position: absolute; top:35px; left:30px; }
+    .fixednav h1 a { background:url(../img/logo.png) no-repeat; height:49px; width:237px; position: absolute; top:45px; left:30px; }
     .mainnav { float: right; margin-top:30px; margin-right:35px; padding-right:35px; position: relative; }
     .mainnav ul { float: right;}
     .mainnav li { float: left; padding:0 10px 0 0; margin:0 10px 0 0; background:url(../img/mainnav_li_background.png) no-repeat right 10px; }
@@ -132,7 +132,7 @@ td { vertical-align: top; }
 
   /* Donate */
   .donate { }
-  .donate .button { background:url(../img/donate_button_sprite.png) repeat-x; height:145px; width:145px; display: block; position: absolute; left:50%; margin:0 0 0 -82px; top:-100px; }
+  .donate .button { background:url(../img/donate_button_sprite.png) repeat-x; height:145px; width:145px; display: block; position: absolute; left:50%; margin:0 0 0 -82px; top:-80px; }
     .donate .button:hover { background-position:0 -150px; }
 
   /* Hero */
