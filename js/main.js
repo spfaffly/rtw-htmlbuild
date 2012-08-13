@@ -151,7 +151,7 @@ $(document).ready(function(){
 
   /* Donate dropdown */
   $('#hero .donate .button').hover(function(){
-    $(this).animate({top:-40});
+    $(this).animate({top:0});
   }, function(){
     $(this).animate({top:-80});
   });
