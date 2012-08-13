@@ -136,16 +136,19 @@ $(document).ready(function(){
   });
 
   // Show the donate nag if cookie is null
-  if($.cookie('donatenag') == null){
+  if($.cookie('donatenag') == null || $.cookie('donatenag') == ''){
     setTimeout(function(){
       $('#donatenag').css({top:-30}).removeClass('hidden').animate({top:0}, 1000);
     }, 3000);
+  } else {
+    $('#fixednav').animate({top:-20});
   }
 
   /* Donate Nag */
   $('#donatenag .action_closenag').on('click', function(event){
     event.preventDefault();
     $('#donatenag').animate({top:-30});
+    $('#fixednav').animate({top:-20});
     $.cookie('donatenag', true);
   });
 

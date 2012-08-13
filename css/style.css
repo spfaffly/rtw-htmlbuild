@@ -101,7 +101,7 @@ td { vertical-align: top; }
 
   /* Header */
     /* Donate Nag */
-    .donatenag { position: absolute; top: 0; left: 0; z-index: 1000; width: 100%; height:24px; line-height:24px; background:#43b9ea; color:#000; }
+    .donatenag { position: fixed; top: 0; left: 0; z-index: 1000; width: 100%; height:24px; line-height:24px; background:#43b9ea; color:#000; }
     .donatenag p { width: 1024px; margin:0 auto; font-family:'Arial'; font-weight:400; font-size: 12px; text-indent:10px; }
     .donatenag a { color:#FFF; font-family:'Museo-700'; font-weight:400; }
     .donatenag a.close { float: right; background:url(../img/donatenag_close.png) no-repeat; height:16px; width:16px; margin-top:4px; }
