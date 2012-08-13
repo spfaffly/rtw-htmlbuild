@@ -244,7 +244,9 @@ $(document).ready(function(){
     // event.preventDefault();
     // $.colorbox({href:"http://placehold.it/350x150&text=rules+action+here!", iframe:true, width:'600px', height:'400px', opacity: 0.6, fixed: true});
     // log('rules trigger!');
-
   });
+
+  /* Colorbox Winners */
+  $("#winners .thumbnail").colorbox({rel:'winners', transition:"fade", maxHeight:"800px" });
 
 });
