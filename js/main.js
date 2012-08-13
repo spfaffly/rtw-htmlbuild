@@ -220,8 +220,13 @@ $(document).ready(function(){
   /* Donate box */
   $('.action_donate').on('click', function(event){
     event.preventDefault();
-    $.colorbox({href:"http://placehold.it/350x150&text=donate+action+here!", iframe:true, width:'600px', height:'400px', opacity: 0.6, fixed: true});
-    log('donate trigger!');
+    $('#new_donation').click();
+  });
+
+  /* Donate box - POTM */
+  $('.action_donate_potm').on('click', function(event){
+    event.preventDefault();
+    $('#new_donation_potm').click();
   });
 
   /* Submit box */
