@@ -55,8 +55,8 @@ $(document).ready(function(){
         oldItems.removeClass( "active" );
       },
       onAfter : function( oldItems, newItems, newSizes ) {
-         $(newItems[1]).addClass( "active" );
-        //$(newItems[1]).animate( {bottom: 0} );
+        $(newItems[1]).addClass( "active" );
+        $(newItems[1]).animate( {bottom: 0} );
       }
     },
     items: { visible : "+1" },
