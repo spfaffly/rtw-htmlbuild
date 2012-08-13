@@ -2,10 +2,7 @@
 
 $(document).ready(function(){
   // initiate page scroller plugin
-  $('body').pageScroller({
-    navigation: '#mainnav',
-    scrollOffset: -140
-  });
+  $('body').pageScroller({ navigation: '#mainnav', scrollOffset: -140 });
 
   // Syncronize footer links
   $('#footer .bottomlinks .home a').on('click', function(event){event.preventDefault(); $('#mainnav .home a').click();});
@@ -243,7 +240,7 @@ $(document).ready(function(){
   /* Submit box */
   $('.action_submit').on('click', function(event){
     event.preventDefault();
-    $.colorbox({href:"http://placehold.it/350x150&text=submit+action+here!", iframe:true, width:'600px', height:'400px', opacity: 0.6, fixed: true});
+    $.colorbox({href:"http://rivertowell.wufoo.com/forms/2011-river-to-well-photo-competition/", iframe:true, width:'800px', height:'800px', opacity: 0.6, fixed: true});
     log('submit trigger!');
   });
 
