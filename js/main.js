@@ -240,18 +240,15 @@ $(document).ready(function(){
   /* Submit box */
   $('.action_submit').on('click', function(event){
     event.preventDefault();
-    $.colorbox({href:"http://rivertowell.wufoo.com/forms/2011-river-to-well-photo-competition/", iframe:true, width:'800px', height:'800px', opacity: 0.6, fixed: true});
-    log('submit trigger!');
+    $.colorbox({href:"http://rivertowell.wufoo.com/forms/q7x3p3/", iframe:true, width:'800px', height:'800px', opacity: 0.6, fixed: true});
   });
 
   /* Rules box */
   $('.action_rules').on('click', function(event){
     // event.preventDefault();
     // $.colorbox({href:"http://placehold.it/350x150&text=rules+action+here!", iframe:true, width:'600px', height:'400px', opacity: 0.6, fixed: true});
-    // log('rules trigger!');
   });
 
   /* Colorbox Winners */
   $("#winners .thumbnail").colorbox({rel:'winners', transition:"fade", maxHeight:"800px" });
-
 });
