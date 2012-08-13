@@ -53,10 +53,13 @@ $(document).ready(function(){
     scroll:{ items: 1, duration: 1000, fx:"scroll",
       onBefore : function( oldItems, newItems, newSizes ) {
         oldItems.removeClass( "active" );
+        // $.each(oldItems, function(){
+        //   $(this).animate({bottom:'80px'});
+        // });
       },
       onAfter : function( oldItems, newItems, newSizes ) {
         $(newItems[1]).addClass( "active" );
-        $(newItems[1]).animate( {bottom: 0} );
+        //$(newItems[1]).css( {bottom: 0} );
       }
     },
     items: { visible : "+1" },

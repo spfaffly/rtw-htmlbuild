@@ -94,10 +94,10 @@ td { vertical-align: top; }
   .thumbnail { position: relative; }
   a.thumbnail { float: left; }
   .thumbnail img { float: left; }
-  .thumbnail .description { opacity: 0; position: absolute; width: 100%; left: 0; bottom: 0; background: #09d5ce; padding: 8px 0; text-align: center; font-family:'Museo-700'; font-weight:400; color: #333; }
-  .thumbnail .description p { padding:0; margin:0; opacity: 1; } /* TODO - Fix opacity on lettering */
+  .thumbnail .description { position: absolute; width: 100%; left: 0; bottom: -40px; background: #09d5ce; padding: 8px 0; text-align: center; font-family:'Museo-700'; font-weight:400; color: #333; }
+  .thumbnail .description p { padding:0; margin:0; }
   .thumbnail:hover .description { bottom: 0; }
-  .active .thumbnail .description { bottom: 0; opacity: 1; }
+  .active .thumbnail .description { bottom: 0; }
 
   /* Header */
     /* Donate Nag */
@@ -391,10 +391,10 @@ td { vertical-align: top; }
 }
 
 .transitiondesc {
-  -webkit-transition: all 1 ease-in-out;
-  -moz-transition: all 1 ease-in-out;
-  -o-transition: all 1 ease-in-out;
-  transition: all 1 ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 /*
