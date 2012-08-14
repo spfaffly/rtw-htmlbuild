@@ -262,12 +262,14 @@
         <a href="#" class="button ir action_donate">Donate</a>
       </section> <!-- END donate -->
       <section class="subscribe">
-        <form action="" method="post">
-          <label for="subscribeemail">Subscribe to our newsletter.</label>
-          <div class="control">
-            <input type="email" name="email" placeholder="Enter your email address" id="subscribeemail" class="subscribeemail" />
-            <input type="submit" name="subscribe" class="subscribebutton ir" value="Subscribe" />
-          </div> <!-- END control -->
+        <form id="subscribeform" action="newsletter.php" method="post">
+          <fieldset>
+            <label for="subscribeemail">Subscribe to our newsletter.</label>
+            <div class="control">
+              <input type="email" name="subscribeemail" placeholder="Enter your email address" id="subscribeemail" class="subscribeemail" />
+              <input type="submit" name="subscribe" class="subscribebutton ir" value="Subscribe" />
+            </div> <!-- END control -->
+          </fieldset>
         </form>
       </section> <!-- END subscribe -->
       <section class="social">

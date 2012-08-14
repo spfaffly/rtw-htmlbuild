@@ -4,7 +4,7 @@ $(document).ready(function(){
   // initiate page scroller plugin
   $('body').pageScroller({ navigation: '#mainnav', scrollOffset: -140 });
 
-  // Syncronize footer links
+  // Synchronize footer links
   $('#footer .bottomlinks .home a').on('click', function(event){event.preventDefault(); $('#mainnav .home a').click();});
   $('#footer .bottomlinks .competition a').on('click', function(event){event.preventDefault(); $('#mainnav .competition a').click();});
   $('#footer .bottomlinks .winners a').on('click', function(event){event.preventDefault(); $('#mainnav .winners a').click();});
@@ -219,6 +219,53 @@ $(document).ready(function(){
           $('#contactform fieldset').animate({opacity:1});
         });
         
+      });
+    }
+  });
+
+  /* Contact Us Form */
+  $('#subscribeform').submit(function(event){
+    event.preventDefault();
+
+    // Remove old error classes
+    $(this).find('input, textarea').removeClass('error');
+
+    // Serialize form data
+    var formdata = $(this).serializeArray();
+
+    // Set error data
+    var error = false;
+    var errormessage = new Array();
+
+    // Iterate through each form element
+    $.each(formdata, function(key, value){
+      // Check for name
+      if(value['name'] == 'subscribeemail'){
+        if(value['value'] == ''){
+          error = true;
+          errormessage.push('Please enter your email address');
+          $('[name="' + value['name'] + '"]').parent().addClass('error');
+        }
+      }
+    });
+
+    // Submit form?
+    if(error){
+      // Display error messages?
+      var html = '';
+      $.each(errormessage, function(key, value){
+        html += '<li>' + value + '</li>';
+      });
+      $('#subscribeerror').html(html);
+    } else {
+      // Submit form to AJAX page
+      $.getJSON('newsletter.php', formdata, function(response){
+        if(response.status == 'ok'){
+          $('#subscribeform fieldset').animate({opacity:0}, function(){
+            $('#subscribeform fieldset').html('<div class="thanks"><h4>Thanks for subscribing!</h4><p>You have successfully subscribed to our newsletter.</p></div>');
+            $('#subscribeform fieldset').animate({opacity:1});
+          });
+        }
       });
     }
   });
