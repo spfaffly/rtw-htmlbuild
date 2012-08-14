@@ -138,11 +138,11 @@ td { vertical-align: top; }
 
   /* Donate */
   .donate { }
-  .donate .button { background:url(../img/donate_button_sprite.png) repeat-x; height:145px; width:145px; display: block; position: absolute; left:50%; margin:0 0 0 -82px; top:-80px; }
+  .donate .button { background:url(../img/donate_button_sprite.png) repeat-x; height:145px; width:145px; display: block; position: absolute; left:50%; margin:0 0 0 -82px; top:-105px; }
     .donate .button:hover { background-position:0 -150px; }
 
   /* Hero */
-  .hero { padding:0 0 30px 0; margin-top:101px; overflow: hidden; position: relative; }
+  .hero { padding:0 0 30px 0; margin-top:125px; overflow: hidden; position: relative; }
   .hero .slide { float: left; width:1024px; overflow: hidden; position: relative; }
     .hero .slide.hide { display: none; }
   .hero .slide img { width:100%; }
@@ -307,6 +307,18 @@ td { vertical-align: top; }
   /* FAQ Section Styles */
   .faq.section dt { font-weight: 400; color: #3dbbe6; font-size: 18px; font-family: 'Museo-500'; }
   .faq.section dd { font-weight: 400; margin: 0; margin-bottom: 10px; font-size: 15px; font-family: 'Museo-500'; }
+
+  /* Event Section Styles */
+  .events.section { min-height: 500px; }
+
+  /* Prize Section Styles */
+  .prizes.section { min-height: 500px; }
+
+  /* Sponsor Section Styles */
+  .sponsors.section { min-height: 500px; }
+
+  /* Resource Section Styles */
+  .resources.section { min-height: 500px; }
 
   /* Footer */
   .footer { position: relative; height:346px; width:100%; margin:30px 0 0 0; background:url(../img/footer_background.png) repeat-x top center; color:#EEE; font-family:'Museo-700'; font-size:12px; overflow: hidden; }

@@ -17,7 +17,7 @@ $(document).ready(function(){
     $('#footer .bottomlinks .aboutus a').on('click', function(event){event.preventDefault(); $('#mainnav .aboutus a').click();});
     $('#footer .bottomlinks .contactus a').on('click', function(event){event.preventDefault(); $('#mainnav .contactus a').click();});
   }
-  
+
   /* Competition Carousel */
   $("#competition .carousel ul").carouFredSel({
     circular: false,
@@ -160,9 +160,9 @@ $(document).ready(function(){
 
   /* Donate dropdown */
   $('#hero .donate .button').hover(function(){
-    $(this).animate({top:0});
+    $(this).animate({top:-40});
   }, function(){
-    $(this).animate({top:-80});
+    $(this).animate({top:-105});
   });
 
   /* Contact Us Form */
