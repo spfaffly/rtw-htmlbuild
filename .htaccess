@@ -544,3 +544,8 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 <IfModule php5_module>
   php_value session.cookie_httponly true
 </IfModule>
+
+# Redirect pages
+redirect 301 /gallery.html http://rivertowell.com/
+redirect 301 /about.html http://rivertowell.com/
+redirect 301 /submit.html http://rivertowell.com/
