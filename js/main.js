@@ -214,11 +214,14 @@ $(document).ready(function(){
     } else {
       // Submit form to AJAX page
       $.getJSON('contactus.php', formdata, function(response){
-        $('#contactform fieldset').animate({opacity:0}, function(){
-          $('#contactform fieldset').html('<div class="thanks"><h3>Thanks for contacting us.</h3><p>We will be in touch with you shortly.</p></div>');
-          $('#contactform fieldset').animate({opacity:1});
-        });
-        
+        if(response.status == 'ok'){
+          $('#contactform fieldset').animate({opacity:0}, function(){
+            $('#contactform fieldset').html('<div class="thanks"><h3>Thanks for contacting us.</h3><p>We will be in touch with you shortly.</p></div>');
+            $('#contactform fieldset').animate({opacity:1});
+          });
+        } else {
+          // @TODO - Capture error message here
+        }
       });
     }
   });
@@ -265,6 +268,8 @@ $(document).ready(function(){
             $('#subscribeform fieldset').html('<div class="thanks"><h4>Thanks for subscribing!</h4><p>You have successfully subscribed to our newsletter.</p></div>');
             $('#subscribeform fieldset').animate({opacity:1});
           });
+        } else {
+          // @TODO - Capture error message here
         }
       });
     }
