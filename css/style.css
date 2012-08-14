@@ -87,7 +87,7 @@ td { vertical-align: top; }
 
   /* Pager Buttons */
   .pager { text-align:center; margin-top: 10px; }
-  .pager a { margin-right:8px; background:url(../img/pager_button_sprite.png) -21px 0 no-repeat; height:13px; width:13px; display: inline-block; border: 0; font: 0/0; text-shadow: none; color: transparent; background-color: transparent; }
+  .pager a { text-indent: -9999px; margin-right:8px; background:url(../img/pager_button_sprite.png) -21px 0 no-repeat; height:13px; width:13px; display: inline-block; border: 0; font: 0/0; text-shadow: none; color: transparent; background-color: transparent; }
   .pager a.selected { background-position:0 0; }
 
   /* Thumbnail */
@@ -257,6 +257,7 @@ td { vertical-align: top; }
     .team .member { position: relative; height: 152px; width: 152px; background: url(../img/about/team_members_sprite.png) no-repeat; display: block; float: left; margin-right: 10px; }
     .team .member:hover { background-position: 0 -340px; }
     .team .member span { position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: url(../img/about/team_members_sprite.png) no-repeat; background-position: 0 -340px; opacity: 0; -webkit-transition: opacity 0.5s; -moz-transition: opacity 0.5s; -o-transition: opacity 0.5s; }
+      .no-csstransitions .team .member span { display: none !important; }
     .team .member:hover span { opacity: 1; }
 
       /* Individuals */
