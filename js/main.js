@@ -165,6 +165,16 @@ $(document).ready(function(){
     $(this).animate({top:-105});
   });
 
+  /* Social Toggle */
+  $('#socialtoggle').hide().removeClass('hidden');
+  $('.action_socialtoggle').toggle(function(){
+    $(this).addClass('toggleon');
+    $('#socialtoggle').slideDown();
+  }, function(){
+    $(this).removeClass('toggleon');
+    $('#socialtoggle').slideUp();
+  });
+
   /* Contact Us Form */
   $('#contactform').submit(function(event){
     event.preventDefault();

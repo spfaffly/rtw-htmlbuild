@@ -133,8 +133,27 @@ td { vertical-align: top; }
         .mainnav .earth.potm { left:250px; }
         .mainnav .earth.aboutus { left:315px; }
         .mainnav .earth.contactus { left:388px; }
-    .mainnav .socialtoggle { position: absolute; top:17px; right:0; height:21px; width:21px; background:url(../img/mainnav_social.png) no-repeat; }
-      .mainnav .socialtoggle:hover { background-position: 0 -30px;}
+    /* Social Icons */ 
+    .fixednav .socialtoggle { position: absolute; top:47px; right:30px; height:21px; width:21px; background:url(../img/mainnav_social.png) no-repeat; z-index: 5; }
+      .fixednav .socialtoggle:hover { background-position: 0 -30px;}
+      .fixednav .socialtoggle.toggleon { background-position: 0 -62px;}
+      .fixednav .socialtoggle.toggleon:hover { background-position: 0 -92px;}
+    /* Social Toggle */
+    .fixednav .socialtogglebar { border: 1px solid #CCC; padding-top: 35px; height: 130px; width: 30px; border-radius: 3px; background: #DDD; position: absolute; top: 43px; right: 25px; z-index: 4; }
+      .fixednav .socialtogglebar .icon { display:block; height: 27px; width: 27px; margin-bottom: 5px; margin-left:2px; background: url(../img/social_icon_sprite.png) no-repeat; }
+      .fixednav .socialtogglebar .icon:hover { background-position: -60px 0; }
+      /* Facebook */
+      .fixednav .socialtogglebar .icon.facebook { background-position: 0 0; }
+        .fixednav .socialtogglebar .icon.facebook:hover { background-position: -60px 0; }
+      /* Twitter */
+      .fixednav .socialtogglebar .icon.twitter { background-position: 0 -25px; height: 25px; }
+        .fixednav .socialtogglebar .icon.twitter:hover { background-position: -60px -25px; }
+      /* Vimeo */
+      .fixednav .socialtogglebar .icon.vimeo { background-position: 0 -50px; }
+        .fixednav .socialtogglebar .icon.vimeo:hover { background-position: -60px -50px; }
+      /* Flickr */
+      .fixednav .socialtogglebar .icon.flickr { background-position: 0 -76px; height: 25px; }
+        .fixednav .socialtogglebar .icon.flickr:hover { background-position: -60px -76px; }
 
   /* Donate */
   .donate { }
