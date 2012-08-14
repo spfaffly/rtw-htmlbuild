@@ -1,7 +1,7 @@
 <?php
 	/* Contact Us form script */
 	// Set error level
-	error_reporting(E_ALL ^ E_NOTICE);
+	error_reporting(E_ALL);
 
 	// Set defaults
 	$error = false;
@@ -23,16 +23,16 @@
 		
 		// Send email if no error
 		if ($error){
-			echo json_encode(array('status' => 'failed', 'message' => 'Error in sending form.'));
+			echo json_encode(array('status' => 'failed', 'message' => 'Error in sending form.', 'longerror' => 'Error exists in form input fields. 1'));
 		} else {
 			$send_contact = mail('info@rivertowell.com', 'Contact Form - River to Well', $message, $headers);
 			if ($send_contact){
 				echo json_encode(array('status' => 'ok', 'message' => 'Email Sent'));
 			} else {
-				echo json_encode(array('status' => 'failed', 'message' => 'Error in sending form.'));
+				echo json_encode(array('status' => 'failed', 'message' => 'Error in sending form.', 'longerror' => 'Mail send error. Check logs.'));
 			}
 		}
 	} else {
-		echo json_encode(array('status' => 'failed', 'message' => 'Error in sending form.'));
+		echo json_encode(array('status' => 'failed', 'message' => 'Error in sending form.', 'longerror' => 'Error exists in form input fields. 2'));
 	}
 ?>

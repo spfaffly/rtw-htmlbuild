@@ -341,7 +341,7 @@ td { vertical-align: top; }
   .resources.section { min-height: 500px; }
 
   /* Footer */
-  .footer { position: relative; height:346px; width:100%; margin:30px 0 0 0; background:url(../img/footer_background.png) repeat-x top center; color:#EEE; font-family:'Museo-700'; font-size:12px; overflow: hidden; }
+  .footer { position: relative; height:346px; width:100%; margin:-10px 0 0 0; background:url(../img/footer_background.png) repeat-x top center; color:#EEE; font-family:'Museo-700'; font-size:12px; overflow: hidden; }
   .footer .content { width:950px; padding-top:34px; background: none; }
   .footer a { color:#EEE; }
     /* Footer Subscribe */
