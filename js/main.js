@@ -9,13 +9,15 @@ $(document).ready(function(){
   }
 
   // Synchronize footer links
-  $('#footer .bottomlinks .home a').on('click', function(event){event.preventDefault(); $('#mainnav .home a').click();});
-  $('#footer .bottomlinks .competition a').on('click', function(event){event.preventDefault(); $('#mainnav .competition a').click();});
-  $('#footer .bottomlinks .winners a').on('click', function(event){event.preventDefault(); $('#mainnav .winners a').click();});
-  $('#footer .bottomlinks .potm a').on('click', function(event){event.preventDefault(); $('#mainnav .potm a').click();});
-  $('#footer .bottomlinks .aboutus a').on('click', function(event){event.preventDefault(); $('#mainnav .aboutus a').click();});
-  $('#footer .bottomlinks .contactus a').on('click', function(event){event.preventDefault(); $('#mainnav .contactus a').click();});
-
+  if(!$('body').hasClass('secondary')){
+    $('#footer .bottomlinks .home a').on('click', function(event){event.preventDefault(); $('#mainnav .home a').click();});
+    $('#footer .bottomlinks .competition a').on('click', function(event){event.preventDefault(); $('#mainnav .competition a').click();});
+    $('#footer .bottomlinks .winners a').on('click', function(event){event.preventDefault(); $('#mainnav .winners a').click();});
+    $('#footer .bottomlinks .potm a').on('click', function(event){event.preventDefault(); $('#mainnav .potm a').click();});
+    $('#footer .bottomlinks .aboutus a').on('click', function(event){event.preventDefault(); $('#mainnav .aboutus a').click();});
+    $('#footer .bottomlinks .contactus a').on('click', function(event){event.preventDefault(); $('#mainnav .contactus a').click();});
+  }
+  
   /* Competition Carousel */
   $("#competition .carousel ul").carouFredSel({
     circular: false,
