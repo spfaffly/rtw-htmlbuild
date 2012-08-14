@@ -1,8 +1,12 @@
 /* Author: River to Well */
 
 $(document).ready(function(){
-  // initiate page scroller plugin
-  $('body').pageScroller({ navigation: '#mainnav', scrollOffset: -140 });
+  // initiate page scroller plugin - if non secondary
+  if($('#fixednav.fixed').length != 0){
+    $('body').pageScroller({ navigation: '#mainnav', scrollOffset: -140 });
+  } else {
+    // Regular links! Follow them!
+  }
 
   // Synchronize footer links
   $('#footer .bottomlinks .home a').on('click', function(event){event.preventDefault(); $('#mainnav .home a').click();});
