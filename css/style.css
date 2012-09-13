@@ -330,6 +330,13 @@ td { vertical-align: top; }
 
   /* Event Section Styles */
   .events.section { min-height: 500px; }
+  .events .eventlist { }
+  .events .eventlist li { width: 100%; float: left; clear: both; margin-bottom: 20px; }
+  .events .logo { float: left; width: 220px; }
+  .events .eventinfo { float: left; font-family: 'Museo-500'; font-size: 14px; }
+  .events .eventinfo h4 { font-size: 18px; color: #3dbbe6; margin: 0; font-weight: 400; }
+  .events .eventinfo p { margin: 0; margin-bottom: 2px; }
+  .events .eventinfo p.strong { font-weight: 400; font-family: 'Museo-700' }
 
   /* Prize Section Styles */
   .prizes.section { min-height: 500px; }
