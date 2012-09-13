@@ -343,6 +343,13 @@ td { vertical-align: top; }
 
   /* Sponsor Section Styles */
   .sponsors.section { min-height: 500px; }
+  .sponsors .sponsorlist { }
+  .sponsors .sponsorlist li { width: 100%; float: left; clear: both; margin-bottom: 20px; }
+  .sponsors .logo { float: left; width: 220px; }
+  .sponsors .sponsorinfo { float: left; font-family: 'Museo-500'; font-size: 14px; }
+  .sponsors .sponsorinfo h4 { font-size: 18px; color: #3dbbe6; margin: 0; font-weight: 400; }
+  .sponsors .sponsorinfo p { margin: 0; margin-bottom: 2px; }
+  .sponsors .sponsorinfo p.strong { font-weight: 400; font-family: 'Museo-700' }
 
   /* Resource Section Styles */
   .resources.section { min-height: 500px; }
