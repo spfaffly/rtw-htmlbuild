@@ -340,6 +340,11 @@ td { vertical-align: top; }
 
   /* Prize Section Styles */
   .prizes.section { min-height: 500px; }
+  .prizes h3 { margin-bottom: 0; }
+  .prizes p { margin: 5px 0; }
+  .prizes ul { list-style: none; padding: 0; margin: 0;  padding-left: 15px; }
+  .prizes ul b { color: #41BAEB;  }
+  .prizes ul li { margin-bottom: 3px; }
 
   /* Sponsor Section Styles */
   .sponsors.section { min-height: 500px; }
