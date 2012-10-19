@@ -96,6 +96,7 @@ td { vertical-align: top; }
   .thumbnail img { float: left; }
   .thumbnail .description { position: absolute; width: 100%; left: 0; bottom: -40px; background: #09d5ce; padding: 8px 0; text-align: center; font-family:'Museo-700'; font-weight:400; color: #333; }
   .thumbnail .description p { padding:0; margin:0; }
+  .thumbnail .description.smalltext p { font-size: 12px; }
   .thumbnail:hover .description { bottom: 0; }
   .active .thumbnail .description { bottom: 0; }
 

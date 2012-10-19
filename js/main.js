@@ -322,4 +322,7 @@ $(document).ready(function(){
 
   /* Colorbox Winners */
   $("#winners .thumbnail").colorbox({rel:'winners', transition:"fade", maxHeight:"800px" });
+
+  /* Colorbox Hero Images */
+  $("#hero .colorbox").colorbox({rel:'hero', transition:"fade", maxHeight:"800px" });
 });
