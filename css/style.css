@@ -360,6 +360,14 @@ td { vertical-align: top; }
   /* Resource Section Styles */
   .resources.section { min-height: 500px; }
 
+  /* Search */
+  .search.section { min-height: 500px; }
+
+  /* Override Search Box */
+  .searchbox { width: 200px; background: #DDD; }
+  .searchbox input { background: none !important; }
+  .searchbox .gsc-input-box { background: #DDD; border: none; }
+
   /* Footer */
   .footer { position: relative; height:346px; width:100%; margin:-10px 0 0 0; background:url(../img/footer_background.png) repeat-x top center; color:#EEE; font-family:'Museo-700'; font-size:12px; overflow: hidden; }
   .footer .content { width:950px; padding-top:34px; background: none; }
