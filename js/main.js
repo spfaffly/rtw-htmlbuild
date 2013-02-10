@@ -325,4 +325,7 @@ $(document).ready(function(){
 
   /* Colorbox Hero Images */
   $("#hero .colorbox").colorbox({rel:'hero', transition:"fade", maxHeight:"800px" });
+
+  /* Colorbox Update Images */
+  $(".image.caption .colorbox").colorbox({rel:'update', transition:"fade", maxHeight:"800px" });
 });
