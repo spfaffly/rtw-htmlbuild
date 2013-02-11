@@ -370,6 +370,7 @@ td { vertical-align: top; }
 
   /* Update 2013 */
   .update { }
+  .update .portrait { padding: 5px; border: 1px solid #CCC; background-color: #EEE; float: left; margin-right: 40px; }
   .update .image.caption { margin-bottom: 30px; }
   .update .image.caption a:focus { outline: none; }
   .update .image.caption img { padding: 5px; border: 1px solid #CCC; width: 860px; background-color: #EEE; }
