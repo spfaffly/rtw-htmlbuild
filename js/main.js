@@ -147,7 +147,7 @@ $(document).ready(function(){
       $('#donatenag').css({top:-30}).removeClass('hidden').animate({top:0}, 1000);
     }, 3000);
   } else {
-    $('#fixednav').animate({top:-20});
+    //$('#fixednav').animate({top:-20});
   }
 
   /* Donate Nag */
