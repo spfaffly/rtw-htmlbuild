@@ -1,7 +1,6 @@
 /* the humans responsible & colophon */
 /* humanstxt.org */
 
-
 /* TEAM */
   Interactive Web Dev: Shane Pfaffly
   Site: http://ictheory.com
