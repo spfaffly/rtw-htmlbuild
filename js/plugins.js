@@ -11,11 +11,16 @@ if (!(window.console && console.log)) {
     }());
 }
 
-/*	
+$(document).ready(function(){
+    // Lazyload the images
+    $('img').unveil();
+});
+
+/*
  *	jQuery carouFredSel 5.6.1
  *	Demo's and documentation:
  *	caroufredsel.frebsite.nl
- *	
+ *
  *	Copyright (c) 2012 Fred Heusschen
  *	www.frebsite.nl
  *
@@ -72,7 +77,7 @@ $(function()
     // check placeholder browser support
     if (!Modernizr.input.placeholder)
     {
-    
+
         // set placeholder values
         $(this).find('[placeholder]').each(function()
         {
@@ -81,7 +86,7 @@ $(function()
                 $(this).val( $(this).attr('placeholder') );
             }
         });
-        
+
         // focus and blur of placeholders
         $('[placeholder]').focus(function()
         {
@@ -98,7 +103,7 @@ $(function()
                 $(this).addClass('placeholder');
             }
         });
-        
+
         // remove placeholders on submit
         $('[placeholder]').closest('form').submit(function()
         {
@@ -110,6 +115,18 @@ $(function()
                 }
             })
         });
-        
+
     }
 });
+
+/**
+ * jQuery Unveil
+ * A very lightweight jQuery plugin to lazy load images
+ * http://luis-almeida.github.com/unveil
+ *
+ * Licensed under the MIT license.
+ * Copyright 2013 Luís Almeida
+ * https://github.com/luis-almeida
+ */
+
+;(function($){$.fn.unveil=function(threshold){var $w=$(window),th=threshold||0,retina=window.devicePixelRatio>1,attrib=retina?"data-src-retina":"data-src",images=this,loaded,inview,source;this.one("unveil",function(){source=this.getAttribute(attrib);source=source||this.getAttribute("data-src");if(source)this.setAttribute("src",source);});function unveil(){inview=images.filter(function(){var $e=$(this),wt=$w.scrollTop(),wb=wt+$w.height(),et=$e.offset().top,eb=et+$e.height();return eb>=wt-th&&et<=wb+th;});loaded=inview.trigger("unveil");images=images.not(loaded);}$w.scroll(unveil);$w.resize(unveil);unveil();return this;};})(jQuery);
