@@ -26,6 +26,7 @@
 			echo json_encode(array('status' => 'failed', 'message' => 'Error in sending form.', 'longerror' => 'Error exists in form input fields. 1'));
 		} else {
 			$send_contact = mail('info@rivertowell.com', 'Contact Form - River to Well', $message, $headers);
+			$send_contact = mail('ken@rivertowell.com', 'Contact Form - River to Well', $message, $headers);
 			$send_contact = mail('shane@rivertowell.com', 'Contact Form - River to Well', $message, $headers);
 
 			if ($send_contact){
