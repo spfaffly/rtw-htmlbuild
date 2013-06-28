@@ -167,6 +167,11 @@ td { vertical-align: top; }
     .hero .slide.hide { display: none; }
   .hero .slide img { width:100%; }
   .hero .donate { }
+  .hero .arrow { }
+  .hero .infobox { position: absolute; bottom: 0; right: 0; }
+    .hero .infobox a { background: url(../img/hero_info.png) 0 1px no-repeat; line-height: 1.1; height: 30px; width: 300px; padding: 0 30px; color: #fff; font-family: "Museo-700"; font-size: 11px; display: block; }
+      .hero .infobox a:hover { text-decoration: none; }
+    .hero .infobox a i { text-decoration: underline; font-style: normal; }
 
   /* Competition Section */
   .competition { }

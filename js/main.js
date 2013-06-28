@@ -18,6 +18,11 @@ $(document).ready(function(){
     $('#footer .bottomlinks .contactus a').on('click', function(event){event.preventDefault(); $('#mainnav .contactus a').click();});
   }
 
+  $('.hero .action_competition').on('click', function(event){
+    event.preventDefault();
+    $('#mainnav .competition a').click();
+  });
+
   /* Competition Carousel */
   $("#competition .carousel ul").carouFredSel({
     circular: false,
@@ -290,7 +295,7 @@ $(document).ready(function(){
       });
     }
   });
-  
+
   /* Remove error box */
   $('#contactform input, #contactform textarea').on('focus', function(){
     $(this).removeClass('error');
