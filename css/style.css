@@ -175,6 +175,8 @@ td { vertical-align: top; }
 
   /* Competition Section */
   .competition { }
+  .competition .bigsubmit { display: block; cursor: pointer; text-indent: -9999px; overflow: hidden; height: 55px; width: 450px; margin: 0 auto; background: url(../img/button_submit.png) no-repeat; }
+    .competition .bigsubmit:hover { background-position: 0 -60px; }
   .competition .slide { height: 300px; }
   .competition .videos { margin-left:90px; }
   .competition .video { background:url(../img/competition_poster_frame.png) no-repeat; padding:5px; margin-right:10px; margin-bottom:15px; height:167px; width:267px; float: left; }
