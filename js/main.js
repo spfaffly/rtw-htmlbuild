@@ -159,7 +159,7 @@ $(document).ready(function(){
   $('#donatenag .action_closenag').on('click', function(event){
     event.preventDefault();
     $('#donatenag').animate({top:-30});
-    $('#fixednav').animate({top:-20});
+    //$('#fixednav').animate({top:-20});
     $.cookie('donatenag', true);
   });
 
