@@ -4,11 +4,117 @@ PHP Picture Index
 
 Created by: Brendan Ryan (http://www.pixelizm.com/)
 Site: http://phppi.pixelizm.com/
-Licence: GNU General Public License v3
+Licence: GNU General Public License v3                   		 
 http://www.gnu.org/licenses/
 
 Change Log
 ------------------------
+
+1.3.0b (1st, July, 2013)
+
+Note:
+
+- Missing admin section and setup, to be added in the next release. It was released this way so it can be tested by others as well as releasing a copy that works with Windows.
+
+New Features:
+
+- Complete rewrite to support Smarty template engine, allows for easier theme creation as well as speed improvements.
+- Classic theme, useful starting point when creating a theme.
+- Cache folder can be stored anywhere (doesn't have to be relevant to the install folder).
+- Blacklists moved to settings file instead of individual text files.
+- Thumbnails now expire on the server, previously they only expired on the client's cache.
+- Basic EXIF support, data provided by the PHP function "exif_read_data" can now be accessed by theme creators. Default theme currently does not use EXIF data.
+- Implemented Supersized (http://buildinternet.com/project/supersized/) for Slideshow feature.
+- Should now work with Windows (Tested with WAMP).
+
+Fixes:
+
+- General speed improvements.
+- Single quotations now allowed in file/folder names. Example: Family's Photos is now acceptable.
+- Other minor bugs.
+
+Settings (See settings.php for more information on each setting):
+
+- Added:
+
+	['folder_blacklist']
+	['file_blacklist']
+	['file_types']
+	['smarty_cache']
+	['smarty_expire']
+	['smarty_theme_debug']
+	['smarty_cache_folder']
+	['smarty_compile_folder']
+	['folder_cover_filename']
+	['enable_slideshow']
+	['slideshow_background_color']
+	['slideshow_sizing']
+	['slideshow_slide_interval']
+	['slideshow_transition_speed']
+	['slideshow_transition_effect']
+	['slideshow_random']
+	['enable_exif_support']
+	['version']
+	['gd_client_cache_expire']
+	['gd_server_cache_expire']
+	['file_cache_expire']
+
+- Depreciated (Some settings may return in future versions):
+
+	['nav_menu_style']
+	['thumbnail_theme']
+	['thumb_use_jpeg_for_png']
+	['image_show_title_on_hover']
+	['folder_show_title_on_hover']
+	['disable_popup_image_viewer_for_mobile']
+	['show_thumbs_under_viewer']
+	['popup_thumb_size']
+	['enable_mousewheel']
+	['enable_click_next']
+	['use_javascript_navigation']
+	['debug_show_settings']
+	['access_log']
+	['access_log_no_thumbnail']
+	['log_timezone']
+	['allow_mobile_theme']
+
+
+1.2.0 (3rd, December, 2012)
+
+New Features:
+
+- Admin section and setup process for new/upgrade installs. Admin section currently only allows to check for updates and changing settings.
+- Breadcrumb style navigation bar.
+- Gallery no longer needs to reside in the PHPPI folder.
+- Thumbnail themes, you can now change the style of the thumbnails irregardless of the chosen gallery theme.
+
+Fixes:
+
+- New php memory limit setting, increasing this value allows large photos to be shown and thumbnails to be dynamically created.
+- Improved sections of coding that needed updating.
+- Upgraded jQuery to 1.8.3.
+- Other minor fixes.
+
+Settings (See setup/admin section for more information on each setting):
+
+- Added:
+
+	[gallery_folder]
+	[thumb_use_jpeg_for_png]
+	[debug_show_vars]
+	[debug_show_settings]
+	[nav_menu_style]
+	[thumbnail_theme]
+	[admin_password]
+	[php_memory]
+
+- Depreciated:
+
+	[debug_show_all]
+	[page_title_format]
+	[allow_theme_settings]
+	[use_css_animations]
+
 
 1.1.1 (21st August, 2012)
 
@@ -53,7 +159,7 @@ Fixes:
 Settings (See settings.php for more information on each setting):
 
 - Added:
-
+	
 	['general']['page_title_show_full_path']
 
 	['general']['thumb_size']['small']
@@ -92,7 +198,7 @@ Settings (See settings.php for more information on each setting):
 
 	['advanced']['use_resize_toggle']
 	['advanced']['use_slimbox']
-
+	
 
 1.0.2 (16th October, 2011)
 
@@ -119,7 +225,7 @@ Settings (See settings.php for more information on each setting):
 - Javascript image loading so your web browser doesn't have to reload the page everytime you go to the next or previous images (disabled by default).
   Currently depending on the size of the image it may appear that you have not clicked next or previous but the image will display after it has loaded.
   This will be fixed in a future version where a loading animation will be displayed.
-- Seperate settings file so future updates will not interfere with you settings (unless changes need to be made but you will be made aware in
+- Seperate settings file so future updates will not interfere with you settings (unless changes need to be made but you will be made aware in 
   the change log).
 - GIF files now supported, thumbnails created by GD now also use the same file type as the original file.
 - Site notice, you can now display a message on every page. This depends on the theme.
@@ -135,8 +241,8 @@ Settings (See settings.php for more information on each setting):
 
 - Added GZIP compression support (for HTML).
 - Added Slimbox 2 support.
-- Added global and folder specific settings. You can now add a settings.php file to any folder and any $settings variable you use will
-  overwrite the global $settings variable. With this you can now have different color schemes for each folder, or use it as a way to
+- Added global and folder specific settings. You can now add a settings.php file to any folder and any $settings variable you use will 
+  overwrite the global $settings variable. With this you can now have different color schemes for each folder, or use it as a way to 
   separate the settings from the index.php to make it easier when upgrading. Note that some settings may clash. Changing the thumbnail
   size does work but if the parent folder is set to a smaller or larger thumbnail size it will not accommodate, dynamic thumbnails for folders
   will also not update. This feature is meant more for visual changes.
