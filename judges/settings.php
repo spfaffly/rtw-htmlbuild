@@ -1,0 +1,60 @@
+<?php
+$phppi['settings']['site_name'] = "RTW Judges Gallery"; //Site name to use in page titles.
+$phppi['settings']['site_notice'] = ""; //Display notice on all pages.
+$phppi['settings']['page_title_logo'] = ""; //URL of image to replace page title text, cannot be outside PHPPI install folder.
+$phppi['settings']['page_title_show_full_path'] = false; //Shows full current path in page title instead of current item.
+$phppi['settings']['theme'] = "pix"; //Folder name of theme to use, theme must reside in themes folder.
+$phppi['settings']['gallery_folder'] = "gallery"; //Folder where gallery images reside, can be relative or absolute. Can be outside PHPPI install folder.
+$phppi['settings']['admin_password'] = ""; //Currently not used.
+$phppi['settings']['thumb_size_small'] = 125; //Size in pixels of max width/height.
+$phppi['settings']['thumb_size_medium'] = 175; //Size in pixels of max width/height.
+$phppi['settings']['thumb_size_large'] = 225; //Size in pixels of max width/height.
+$phppi['settings']['thumb_size_default'] = "medium"; //Default size to use for gallery thumbnails.
+$phppi['settings']['enable_thumb_size_change'] = true; //Show buttons for user to change thumbnail size.
+$phppi['settings']['thumb_file_ext'] = "jpg"; //Extension to use for non-dynamic thumbnails.
+$phppi['settings']['thumb_folder_show_thumbs'] = true; //Show thumbnails for directories.
+$phppi['settings']['thumb_folder_shuffle'] = true; //Shuffle the images used for directory thumbnails.
+$phppi['settings']['thumb_folder_use_cache_only'] = false; //Only display directory thumbnails that have been cached, allows for major speed increases but only works if images have been cached.
+$phppi['settings']['use_popup_image_viewer'] = false; //Enable fancybox instead of the built in image viewer.
+$phppi['settings']['nextprev_image_animation'] = "fade"; //Animation to use when moving between images in fancybox. Accepts: none; fade; elastic
+$phppi['settings']['open_image_animation'] = "fade"; //Animation to use when opening images in fancybox. Accepts: none; fade; elastic
+$phppi['settings']['close_image_animation'] = "fade"; //Animation to use when closing images in fancybox. Accepts: none; fade; elastic
+$phppi['settings']['enable_hotkeys'] = false; //Enable pressing left/right arrow on the keyboard moves between images in the built in image viewer.
+$phppi['settings']['enable_up_hotkey'] = false; //Enable pressing up on the keyboard returns to the folder from the built in image viewer.
+$phppi['settings']['debug_mode'] = false; //Displays any errors returned by PHP.
+$phppi['settings']['debug_show_vars'] = false; //Displays all variables used by PHPPI.
+$phppi['settings']['cyrillic_support'] = true; //Enables cyrillic support (i.e. non-standard characters like japanese, russian, etc.)
+$phppi['settings']['use_gzip_compression'] = "on"; //Enables gzip compression, can speed up page loading.
+$phppi['settings']['gzip_compression_level'] = 1; //Compression level for gzip (0 to 9).
+$phppi['settings']['php_memory'] = "150"; //Allowed memory for PHP to use, in MB. For large images, over 100MB is recommended.
+$phppi['settings']['use_gd'] = true; //Enable dynamically generated thumbnails.
+$phppi['settings']['use_gd_cache'] = true; //Cache dynamically generated thumbnails for quicker page loads.
+$phppi['settings']['gd_client_cache_expire'] = 172800; //Time in seconds before thumbnails expire on the user's local cache.
+$phppi['settings']['gd_server_cache_expire'] = 172800; //Time in seconds before thumbnails expire on the server cache, only expires if someone visits the site after this time.
+$phppi['settings']['jpeg_quality'] = 75; //Quality of jpeg thumbnails (1 to 100).
+$phppi['settings']['use_file_cache'] = true; //Cache folder contents for quicker page loads.
+$phppi['settings']['file_cache_expire'] = 86400; //Time in seconds before file cache expires on the server, only expires if someone visits the site after this time.
+$phppi['settings']['cache_folder'] = "cache/gallery"; //Folder where the gallery cache resides, can be relative or absolute. Can be outside PHPPI install folder. Make sure it's writable by the user account used by PHP/Apache/IIS.
+$phppi['settings']['thumbs_folder'] = "thumbs"; //Folder where the thumbnails resides if you have "use_gd" disabled. Thumbnails must be named the same as the original image and use the file extension specified in "thumb_file_ext".
+
+$phppi['settings']['folder_blacklist'] = ".,..,cache,phppi"; //Comma separated list of folders to not display when viewing your gallery.
+$phppi['settings']['file_blacklist'] = "_cover_.png"; //Comma separated list of files to not display when viewing your gallery.
+$phppi['settings']['file_types'] = "jpg,jpeg,png,gif"; //Comma separated list of file types to search for when looking for images.
+$phppi['settings']['smarty_cache'] = false; //Enable cache for smarty template engine, can improve load speeds.
+$phppi['settings']['smarty_expire'] = 86400; //Time in seconds before the cache expires.
+$phppi['settings']['smarty_theme_debug'] = false; //Enable debug mode for smarty, useful if working on a theme.
+$phppi['settings']['smarty_cache_folder'] = "cache/smarty/cache"; //Folder where the smarty cache resides, can be relative or absolute. Can be outside PHPPI install folder. Make sure it's writable by the user account used by PHP/Apache/IIS.
+$phppi['settings']['smarty_compile_folder'] = "cache/smarty/compile"; //Folder where smarty compiles templates, can be relative or absolute. Can be outside PHPPI install folder. Make sure it's writable by the user account used by PHP/Apache/IIS.
+$phppi['settings']['folder_cover_filename'] = "_cover_.png"; //File name to use for a custom directory thumbnail, useful if the directory has no images to display.
+
+$phppi['settings']['enable_slideshow'] = true; //Enable slideshow feature.
+$phppi['settings']['slideshow_background_color'] = ""; //Background color in hex (must include #) for slideshow.
+$phppi['settings']['slideshow_sizing'] = "both"; //Slideshow sizing, landscape: stretch to fit horizontally, crop bottom/top if necessary. portrait: stretch to fit vertically, crop left/right if necessary. both: stretch in all directions keeping correct ratio, no cropping.
+$phppi['settings']['slideshow_slide_interval'] = "5000"; //Time in milliseconds between switching to next image.
+$phppi['settings']['slideshow_transition_speed'] = "1000"; //Time in milliseconds for transition.
+$phppi['settings']['slideshow_transition_effect'] = 1; //Transition effect: 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+$phppi['settings']['slideshow_random'] = false; //Randomize images in slideshow.
+
+$phppi['settings']['enable_exif_support'] = false; //Enables EXIF data, requires theme that supports it.
+$phppi['settings']['version'] = '1.3.0'; //Used by PHPPI when upgrading, don't change.
+?>
