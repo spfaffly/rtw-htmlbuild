@@ -50,4 +50,4 @@ build/buildinfo.properties
 build/config/buildinfo.properties
 
 # cache folders
-judges/caches/*
+judges/cache/*
