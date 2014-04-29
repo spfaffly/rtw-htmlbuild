@@ -399,7 +399,7 @@ td { vertical-align: top; }
   .popup { min-width: inherit; background: none; padding: 0 20px; }
   .popup h1 { color: #3dbbe6; font-family: 'Museo-500'; font-size: 36px; }
   .popup p { font-family: 'Museo-300'; line-height: 1.3; font-size: 18px; }
-  .popup .indent { text-indent: 20px; }
+  /*.popup .indent { text-indent: 20px; }*/
   .popup .signature { color: #3dbbe6; font-style: italic; text-align: right; }
 
   /* Footer */
