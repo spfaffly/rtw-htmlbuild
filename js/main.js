@@ -1,6 +1,9 @@
 /* Author: River to Well */
 
 $(document).ready(function(){
+  // Kick off popup message for 2014
+  $.colorbox({href:"2014_message.html", iframe:true, width:'700px', maxWidth:'90%', height:'400px', maxHeight:"800px", opacity: 0.6, fixed: true});
+
   // initiate page scroller plugin - if non secondary
   if($('#fixednav.fixed').length != 0){
     $('body').pageScroller({ navigation: '#mainnav', scrollOffset: -140 });
